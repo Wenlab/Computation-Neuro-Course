@@ -1,3 +1,8 @@
+# Excluded Folders
+/Data/*
+
+# Excluded File Types
+
 # Prerequisites
 *.d
 
