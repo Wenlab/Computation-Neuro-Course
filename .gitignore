@@ -1,5 +1,5 @@
-# Excluded Folders
-/Data/*
+# Track nothing but links in the Data folder
+/Data/!.lnk
 
 # Excluded File Types
 
