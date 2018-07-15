@@ -1,6 +1,8 @@
 # Track nothing but links in the Data folder
 /Data/*
 !/Data/*.lnk
+!/Data/*.md
+!/Data/*.markdown
 
 # Excluded File Types
 

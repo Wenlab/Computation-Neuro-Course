@@ -1,0 +1,1 @@
+For the References folder, we'd like to integrate Endnote with GitHub and make the shared library can be seamlessly used as a third party component in this GitHub based project management system. However, details has to be worked out.
