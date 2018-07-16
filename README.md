@@ -15,7 +15,7 @@ For the Code folder, it is naturally compatible with GitHub which is born for co
 
 For the Data folder, only link files will be tracked and uploaded to GitHub. Moreover, all data put in the Data folder would be automatically synchronized to the corresponding folder in the server. 
 
-Potential issues: if you want to download a link file directly from GitHub, please change the post-fix to .lnk manually to make things work fine. Also you have to make your link files to be read-only before uploading them. (check [solution](https://github.com/owncloud/client/issues/4300) at here.)
+Potential issues: if you want to download a link file directly from GitHub, please change the post-fix to .lnk manually to make things work fine. Also you have to make your link files to be read-only before uploading them. (check the [solution](https://github.com/owncloud/client/issues/4300) at here.)
 
 For the Results folder, it is a folder where lots of cooperation happen. Therefore we need a perfect solution to tame Office files, Matlab figures, pictures and (even some videos) in Git way. Currently, the solution is using pull requests manually solve all conflicts.
 
