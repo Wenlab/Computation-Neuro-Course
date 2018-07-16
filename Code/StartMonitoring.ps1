@@ -4,10 +4,6 @@
 # this script is compatible with PowerShell 6.0 or later
 # you can download PowerShell from https://github.com/PowerShell/PowerShell
 
-
-
-
-
 # last modified on Jul. 16, 2018
 
 
