@@ -19,6 +19,10 @@ Potential issues: if you want to download a link file directly from GitHub, plea
 
 For the Results folder, it is a folder where lots of cooperation happen. Therefore we need a perfect solution to tame Office files, Matlab figures, pictures and (even some videos) in Git way. Currently, the solution is using pull requests manually solve all conflicts.
 
+use FreeFilesSync to automatically synchronize files in the local folder to the remote folder on the server.
+[tutorial](https://freefilesync.org/manual.php?topic=schedule-batch-jobs)
+
+
 In addition, people can use this README as a freeGate to explore other components in this GitHub-based project management system.
 
 Currently, we have:
