@@ -23,40 +23,43 @@
 
 ### DEFINE ACTIONS AFTER AN EVENT IS DETECTED
 
-    $actionOnCreated = { $path = $Event.SourceEventArgs.FullPath
-                 $postfix = [System.IO.Path]::GetExtension($path)
-                 $basename = [System.IO.Path]::GetFileNameWithoutExtension($path)
-                 $parentFolder = Split-Path -Path $path
-                 $fileName = Split-Path $path -leaf
-                 if ("$postfix" -ne '.lnk') 
-                 {
-                    $desFolder = "\\222.195.69.205\wenlab\Young\test\Data"
-                    $changeType = $Event.SourceEventArgs.ChangeType
-                    $logline = "$(Get-Date), $changeType, $path"
-                    Add-content "C:\Users\USER\Documents\DirMonitoringLog.txt" -value $logline
+    $actionOnCreated = {                
+                $path = $Event.SourceEventArgs.FullPath
+                $extension = [System.IO.Path]::GetExtension($path)
+                $basename = [System.IO.Path]::GetFileNameWithoutExtension($path)
+                $parentFolder = Split-Path -Path $path
+                if ($excludedExtensions -contains $extension) 
+                {
+                    return
+                }
+                    
+                $changeType = $Event.SourceEventArgs.ChangeType
+                $logline = "$(Get-Date), $changeType, $path"
+                Add-content "C:\Users\USER\Documents\DirMonitoringLog.txt" -value $logline
                    
-                    # check if the same-named file existed on the remote folder
-                    # potential subfolder issue to solve
-                    $remoteFile = "$desFolder\$fileName"
-                    if ([System.IO.File]::Exists($remoteFile))
-                    {
-                        # rename the file with the additional post-fix 'copy' 
-                        $remoteFile = "$desFolder\$basename-copy$postfix"
-                        # copy the new item with a new name
-                        copy-item $path -Destination $remoteFile -Recurse
-                    } 
-                    else
-                    {
-                        # copy the new item to the server
-                        copy-item $path -Destination $desFolder -Recurse
-                    }
-                        # in the local folder, create a link that linked with the copied file in the remote folder
-                        $linkFile = "$parentFolder\$basename.lnk"
-                        $WshShell = New-Object -comObject WScript.Shell
-                        $Shortcut = $WshShell.CreateShortcut($linkFile)
-                        $Shortcut.TargetPath = $remoteFile
-                        $Shortcut.Save()
-                 }
+                # check if the same-named file existed on the remote folder
+                # potential subfolder issue to solve
+                    
+                $remoteFile = "$desFolder\$basename$extension"
+                if ([System.IO.File]::Exists($remoteFile))
+                {
+                    # pop up a warning window
+                    $popupShell = New-Object -ComObject Wscript.Shell
+                    $popupShell.Popup("Pull Request! File already exists at $remoteFile",0,"Pull Request!",0x1)
+                    return
+                } 
+                else
+                {
+                    # copy the new item to the server
+                    copy-item $path -Destination $desFolder
+                    # in the local folder, create a link that linked with the copied file in the remote folder
+                    $linkFile = "$parentFolder\$basename.lnk"
+                    $WshShell = New-Object -comObject WScript.Shell
+                    $Shortcut = $WshShell.CreateShortcut($linkFile)
+                    $Shortcut.TargetPath = $remoteFile
+                    $Shortcut.Save()             
+                }
+                
                }
 
     $actionOnChanged = { 
