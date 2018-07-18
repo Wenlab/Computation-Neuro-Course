@@ -1,10 +1,11 @@
 ### Track nothing in the system folder
 #/System/*
 ### Track nothing but links and readMe in the Data folder
-/Data/*
-!/Data/*.lnk
-!/Data/*.md
-!/Data/*.markdown
+# ** means recursively
+/Data/**
+!/Data/**.lnk
+!/Data/**.md
+!/Data/**.markdown
 
 
 
