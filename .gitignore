@@ -3,7 +3,7 @@
 ### Track nothing but links and readMe in the Data folder
 # ** means recursively
 /Data/**
-!/Data/**.lnk
+!/Data/**/*.lnk
 !/Data/*.md
 !/Data/*.markdown
 
