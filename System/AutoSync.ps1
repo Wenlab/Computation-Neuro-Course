@@ -1,7 +1,7 @@
 # run the bat of freeFileSync to update the local folder to the remote folder
 Start-Process C:\Users\USER\Documents\Template-Project-Repository\System\syncLocalFolder2Server.ffs_batch
 # Sleep for 2 seconds
-sleep 2 # seconds
+sleep 10 # seconds
 
 ### In the local folder, automatically create links to link data in the remote folder
 $LocalPath = "C:\Users\USER\Documents\Template-Project-Repository\Data"
