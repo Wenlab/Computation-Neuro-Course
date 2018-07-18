@@ -1,5 +1,5 @@
 # run the bat of freeFileSync to update the local folder to the remote folder
-Start-Process .\syncLocalFolder2Server.ffs_batch
+Start-Process C:\Users\USER\Documents\Template-Project-Repository\System\syncLocalFolder2Server.ffs_batch
 # Sleep for 2 seconds
 sleep 2 # seconds
 

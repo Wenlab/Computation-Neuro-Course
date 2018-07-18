@@ -10,7 +10,9 @@
 2. Git clone the project repository to your local directory as your project folder, everything related to the project should be placed in this folder or in the project repository on GitHub 
 3. Download the sync software [FreeFileSync](https://freefilesync.org/download.php)
 4. Install FreeFileSync with the default settings.
-5. Configure the PowerShell Script "AutoSync.ps1" with the local folder and the remote folder of your project.
+5. Configure the PowerShell Script "AutoSync.ps1" with the local folder and the remote folder of your project and the FreeFileSync batch file path.
+6. Configure the FreeFileSync batch file with the local folder and the remote folder of your project.
+7. Set-up the Windows Task Scheduler as start the program "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" with the argument "& path/to/AutoSync.ps1"
 
 
 ### Supporting tools recommendation
