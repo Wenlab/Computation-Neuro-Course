@@ -8,7 +8,7 @@
 !/Data/*.markdown
 
 # ... even if they are in sub-directories
-!*/Data/
+!/Data/*
 
 
 # Excluded files with following extensions
