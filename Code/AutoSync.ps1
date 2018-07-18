@@ -20,11 +20,16 @@ $files = Get-ChildItem $RemotePath # there could be filters
 foreach ($file in $files) {
     $WshShell = New-Object -comObject WScript.Shell
     $targetPath = Join-Path $RemotePath $file
+    if (Test-Path -path $targetPath -PathType container) { continue } # skip creating links for folders
     $linkPath = Join-Path $LocalPath $file
-    $Shortcut = $WshShell.CreateShortcut($linkPath+'.lnk')
-    $Shortcut.TargetPath = $targetPath
-    $Shortcut.Save()
+    if(![System.IO.File]::Exists($linkPath+'.lnk'))
+    {
+        $Shortcut = $WshShell.CreateShortcut($linkPath+'.lnk')
+        $Shortcut.TargetPath = $targetPath
+        $Shortcut.Save()
+    }
+    
 }
-
+Write-Host "Synchronization Done. The program will exit in 10 seconds"
 # hold-on for 10 seconds to check out the messaged in the console
 sleep 10

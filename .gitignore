@@ -1,10 +1,19 @@
-# Track nothing but links in the Data folder
+### Track nothing in the system folder
+#/System/*
+### Track nothing but links and readMe in the Data folder
 /Data/*
 !/Data/*.lnk
 !/Data/*.md
 !/Data/*.markdown
 
-# Excluded File Types
+
+
+# Excluded files with following extensions
+*.tmp
+# Excluded files with following prefix
+~$*.docx
+~$*.xlsx
+~$*.pptx
 
 ## Executables
 *.exe
