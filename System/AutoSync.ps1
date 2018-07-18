@@ -20,6 +20,7 @@ $files = Get-ChildItem $RemotePath # there could be filters
 foreach ($file in $files) {
     $WshShell = New-Object -comObject WScript.Shell
     $targetPath = Join-Path $RemotePath $file
+    if (Test-Path -path $targetPath -PathType container) { continue } # skip creating links for folders
     $linkPath = Join-Path $LocalPath $file
     if(![System.IO.File]::Exists($linkPath+'.lnk'))
     {
