@@ -8,11 +8,9 @@ sleep 10 # seconds
 $LocalPath = "C:\Users\USER\Documents\Template-Project-Repository\Data\links"
 $RemotePath = "\\222.195.69.205\wenlab\Young\test\Data"
 
-# Test if the remote path exists 
+# if RemotePath or LocalPath does not exist create one
 if (!(Test-Path -path $RemotePath)) {New-Item $RemotePath -ItemType Directory}
-else {
-    Write-Host "RemotePath already exists"
-}
+if (!(Test-Path -path $LocalPath)) {New-Item $LocalPath -ItemType Directory)
 
 
 # remove invalid links in the local folder

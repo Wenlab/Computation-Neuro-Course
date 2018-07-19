@@ -8,6 +8,7 @@
 !/Data/*.markdown
 ### For the reference folder, only upload the highly-related references folder, other references will be only uploaded with corresponding links.
 /References/*
+!/References/links/*
 !/References/Highly-related References/*
 !/References/*.md
 !/References/*.lnk
