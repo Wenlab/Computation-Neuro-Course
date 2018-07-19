@@ -20,3 +20,4 @@
 - Sublime with the markdownpreview package as the ultimate markdown (and other languages) editor.
 
 There should be no change.
+Git ignore?
