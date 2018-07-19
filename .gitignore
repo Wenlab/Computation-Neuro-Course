@@ -1,5 +1,20 @@
-### Track nothing in the system folder
-/System/*
+### Ignore everything but the selected folders
+*
+!/Data/*
+!/References/*
+!/Code/*
+!/Results/*
+!.gitignore
+!.LICENSE
+!.README.md
+!/.git/*
+
+
+
+### Track nothing in the system folder and the working folder
+#/System/*
+#/Working/*
+
 ### Track nothing but links and readMe in the Data folder
 # ** means recursively
 /Data/*
@@ -11,8 +26,11 @@
 !/References/links/*
 !/References/Highly-related References/*
 !/References/*.md
-!/References/*.lnk
-!/References/PDFs/*.lnk
+!/References/*.markdown
+
+### For the code folder, ignore large file types, please put test data in the Data folder
+/Code/**.pdf
+/Code/**.docx
 
 
 # Excluded files with following extensions
