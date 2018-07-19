@@ -16,7 +16,7 @@ if (!(Test-Path -path $LocalPath)) {New-Item $LocalPath -ItemType Directory}
 
 
 # remove invalid links in the local folder
-$links = Get-ChildItem $LocalPath -recurse -include *.lnk
+$links = Get-ChildItem $LocalPath # for lower version, -include seems not work
 if (![string]::IsNullOrEmpty($links))
 {
     # for each link
