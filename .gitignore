@@ -1,11 +1,11 @@
 ### Ignore everything but the selected folders
 *
-!/Data/*
+!/Data/
 !/References/*
 !/Code/*
 !/Results/*
 !/System/*
-!/Working/*
+!/Working/
 !.gitignore
 !.LICENSE
 !README.md
