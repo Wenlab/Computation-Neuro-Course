@@ -1,11 +1,17 @@
 ### Track nothing in the system folder
-#/System/*
+/System/*
 ### Track nothing but links and readMe in the Data folder
 # ** means recursively
-/Data/**!.lnk
-#!/Data/**/*.lnk
+/Data/*
+!/Data/links/*
 !/Data/*.md
 !/Data/*.markdown
+### For the reference folder, only upload the highly-related references folder, other references will be only uploaded with corresponding links.
+/References/*
+!/References/Highly-related References/*
+!/References/*.md
+!/References/*.lnk
+!/References/PDFs/*.lnk
 
 
 # Excluded files with following extensions

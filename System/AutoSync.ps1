@@ -1,10 +1,11 @@
 # run the bat of freeFileSync to update the local folder to the remote folder
 Start-Process C:\Users\USER\Documents\Template-Project-Repository\System\syncLocalFolder2Server.ffs_batch
 # Sleep for 2 seconds
+Write-Host "Files Sync Done. Please wait 10 seconds for cleaning temporary caches."
 sleep 10 # seconds
 
 ### In the local folder, automatically create links to link data in the remote folder
-$LocalPath = "C:\Users\USER\Documents\Template-Project-Repository\Data"
+$LocalPath = "C:\Users\USER\Documents\Template-Project-Repository\Data\links"
 $RemotePath = "\\222.195.69.205\wenlab\Young\test\Data"
 
 # Test if the remote path exists 
@@ -13,21 +14,46 @@ else {
     Write-Host "RemotePath already exists"
 }
 
-# Get all files on the remote path
-$files = Get-ChildItem $RemotePath # there could be filters
 
+# remove invalid links in the local folder
+$links = Get-ChildItem $LocalPath -recurse -include *.lnk
+
+# for each link
+foreach ($link in $links) {
+    $LShell = New-Object -comObject WScript.Shell
+    $linkFile = $link.FullName
+    $target = $WshShell.CreateShortcut($linkFile).targetpath
+    if(![System.IO.File]::Exists($target)) # if target does not exist, remove the link
+    {
+        Remove-Item -Path $linkFile -Force  
+    }
+}
+
+
+# Get all files on the remote path
+$files = Get-ChildItem $RemotePath -recurse # there could be filters
+$re = "^" + [regex]::Escape("$RemotePath\")
 #Foreach-Object
 foreach ($file in $files) {
     $WshShell = New-Object -comObject WScript.Shell
-    $targetPath = Join-Path $RemotePath $file
-    if (Test-Path -path $targetPath -PathType container) { continue } # skip creating links for folders
-    $linkPath = Join-Path $LocalPath $file
-    if(![System.IO.File]::Exists($linkPath+'.lnk'))
-    {
-        $Shortcut = $WshShell.CreateShortcut($linkPath+'.lnk')
-        $Shortcut.TargetPath = $targetPath
-        $Shortcut.Save()
+    $targetPath = $file.FullName
+    $relativePath = $targetPath -replace $re
+    if (Test-Path -path $targetPath -PathType container) # create folders for folders
+    {   
+        $LocalDir = "$LocalPath\$relativePath"
+        if (!(Test-Path -path $LocalDir)) {New-Item $LocalDir -ItemType Directory}
     }
+    else{
+        # create a link for a file
+        $linkPath = "$LocalPath\$relativePath.lnk" 
+        if(![System.IO.File]::Exists($linkPath))
+        {
+            $Shortcut = $WshShell.CreateShortcut($linkPath)
+            $Shortcut.TargetPath = $targetPath
+            $Shortcut.Save()
+        }
+    } 
+    
     
 }
 Write-Host "Synchronization Done. The program will exit in 10 seconds"

@@ -23,6 +23,7 @@
             <Item>*\desktop.ini</Item>
             <Item>*\thumbs.db</Item>
             <Item>*.lnk</Item>
+            <Item>\links\</Item>
         </Exclude>
         <TimeSpan Type="None">0</TimeSpan>
         <SizeMin Unit="None">0</SizeMin>
