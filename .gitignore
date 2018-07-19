@@ -13,11 +13,6 @@
 !/References
 /References/*
 
-!/References/**.md
-!/References/**.markdown
-!/References/links
-!/References/Highly-related-References/*
-
 !/Data
 /Data/*
 
@@ -25,7 +20,10 @@
 !/Data/**.md
 !/Data/**.markdown
 
-
+!/References/**.md
+!/References/**.markdown
+!/References/links
+!/References/Highly-related-References/*
 
 !/System/README.md
 !/Working/README.md
