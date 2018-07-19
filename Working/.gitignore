@@ -1,0 +1,4 @@
+### Track nothing in the working folder
+/*
+!.gitignore
+!README.md

@@ -1,32 +1,14 @@
-### Ignore everything but the selected folders
+### Ignore everything but the selected folders and files
 /*
 !.gitignore
 !.LICENSE
 !README.md
-
-!/System
-/System/*
-
-!/Working
-/Working/*
-
-!/References
-/References/*
-
+!/Code
 !/Data
-/Data/*
-
-!/Data/links/
-!/Data/**.md
-!/Data/**.markdown
-
-!/References/**.md
-!/References/**.markdown
-!/References/links
-!/References/Highly-related-References/*
-
-!/System/README.md
-!/Working/README.md
+!/References
+!/Results
+!/System
+!/Working
 
 
 
