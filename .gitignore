@@ -1,3 +1,4 @@
 ### Ignore everything but the selected folders
 /*
 !.gitignore
+!/System
