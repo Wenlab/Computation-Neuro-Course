@@ -4,17 +4,18 @@
 !/References/*
 !/Code/*
 !/Results/*
+!/System/*
+!/Working/*
 !.gitignore
 !.LICENSE
-!.README.md
+!README.md
 !/.git/*
 
-
-
 ### Track nothing in the system folder and the working folder
-#/System/*
-#/Working/*
-
+/System/*
+!/System/README.md
+/Working/*
+!/Working/README.md
 ### Track nothing but links and readMe in the Data folder
 # ** means recursively
 /Data/*
