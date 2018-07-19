@@ -1,11 +1,25 @@
 ### Ignore everything but the selected folders
 /*
 !.gitignore
+!.LICENSE
+!README.md
+
 !/System
 /System/*
 
 !/Working
 /Working/*
+
+!/References
+/References/*
+
+
+
+
+!/References/**.md
+!/References/**.markdown
+!/References/links/**.lnk
+!/References/Highly-related References/*
 
 
 !/System/README.md
