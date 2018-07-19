@@ -1,15 +1,15 @@
 ### Ignore everything but the selected folders
-*
-!/Data/
-!/References/
-!/Code/
-!/Results/
-!/System/
-!/Working/
+/*
+!/Data
+!/References
+!/Code
+!/Results
+!/System
+!/Working
 !.gitignore
 !.LICENSE
 !README.md
-!/.git/
+
 
 ### Track nothing in the system folder and the working folder
 /System/*
