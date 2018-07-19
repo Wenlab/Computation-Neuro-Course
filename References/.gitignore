@@ -1,7 +1,8 @@
-### For the reference folder, only upload the highly-related references folder, other references will be only uploaded with corresponding links.
-/**
+### Track nothing but links and markdown files in the Reference folder
+# the highly-related-references can also be uploaded as a secret.
+/*
 !.gitignore
 !/links
-!/Highly-related-References/
-!**.md
-!**.markdown
+!/Highly-related-references
+!*.md
+!*.markdown
