@@ -14,8 +14,9 @@
 6. Configure the FreeFileSync batch file with the local folder and the remote folder of your project.
 7. Set-up the Windows Task Scheduler as start the program "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" with the argument "& path/to/AutoSync.ps1"
 
-test
 
 ### Supporting tools recommendation
 - Google Chrome for processing issues and editing files on GitHub website.
 - Sublime with the markdownpreview package as the ultimate markdown (and other languages) editor.
+
+There should be no change.
