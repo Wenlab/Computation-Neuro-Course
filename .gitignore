@@ -13,17 +13,23 @@
 !/References
 /References/*
 
-
-
-
 !/References/**.md
 !/References/**.markdown
 !/References/links
 !/References/Highly-related-References/*
 
+!/Data
+/Data/*
+
+!/Data/links/
+!/Data/**.md
+!/Data/**.markdown
+
+
 
 !/System/README.md
 !/Working/README.md
+
 
 
 
