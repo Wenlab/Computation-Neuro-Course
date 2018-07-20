@@ -7,4 +7,4 @@ If you have any questions or want to search for support, please post an issue on
 
 Jul. 18, 2018 by Wenbin Yang (bysin7@gmail.com)
 
-[GitHub](www.Github.com)
+[GitHub](https://github.com/)
