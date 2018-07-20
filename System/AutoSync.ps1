@@ -3,7 +3,8 @@ Set-ExecutionPolicy RemoteSigned
 # run the bat of freeFileSync to update the local folder to the remote folder
 Start-Process G:\Worm-Thermotaxis\System\syncLocalFolder2Server.ffs_batch
 # Sleep for 2 seconds
-Write-Host "Files Sync Done. Please wait 10 seconds for cleaning temporary caches."
+Write-Host "Files Sync Done."
+Write-Host "Please wait 10 seconds for cleaning temporary caches."
 sleep 10 # seconds
 
 ### In the local folder, automatically create links to link data in the remote folder
@@ -17,14 +18,14 @@ if (!(Test-Path -path $LocalPath)) {New-Item $LocalPath -ItemType Directory}
 
 # remove invalid links in the local folder
 $links = Get-ChildItem $LocalPath -recurse -include *.lnk
-if (![string]::IsNullOrEmpty($links))
+if (!([string]::IsNullOrEmpty($links)))
 {
     # for each link
     foreach ($link in $links) {
         $LShell = New-Object -comObject WScript.Shell
         $linkFile = $link.FullName
         $target = $WshShell.CreateShortcut($linkFile).targetpath
-        if(![System.IO.File]::Exists($target)) # if target does not exist, remove the link
+        if(!(Test-Path $target)) # if target does not exist, remove the link
         {
             Remove-Item -Path $linkFile -Force  
         }
@@ -59,4 +60,4 @@ foreach ($file in $files) {
 }
 Write-Host "Synchronization Done. The program will exit in 10 seconds"
 # hold-on for 10 seconds to check out the messaged in the console
-sleep 10
+sleep 5
