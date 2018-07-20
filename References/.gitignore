@@ -6,3 +6,5 @@
 !/Highly-related-references
 !*.md
 !*.markdown
+!EndNoteLibrary.enl
+!/PDFs
