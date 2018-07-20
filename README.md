@@ -34,4 +34,4 @@ Currently, we have:
 
 [1]: http://www.wenlab.org/
 [2]: http://222.195.69.24/wiki/Quan_projects
-[3]: https://github.com/Wenlab
+[3]: https://wenlab.github.io./
