@@ -1,26 +1,26 @@
 # Template-Project-Repository
 This repository is a template repository for creating new project repositories.
 
-The No.1 principle of the project repository: One project, one folder.
+The No.1 principle of the project repository: 
 
-For the project repository, it has four parts (folders):
-1. References
-2. Code
-3. Data
-4. Results
+_**One project, one folder.**_
 
-For the References folder, we'd like to integrate Endnote with GitHub and make the shared library can be seamlessly used as a third party component in this GitHub based project management system. However, details has to be worked out.
+There are five subfolders: Code, Data, References, Results, Working
+## Code Folder
+Please put only pure code files in this directory. No test data, no generated files, no compressed files.
 
-For the Code folder, it is naturally compatible with GitHub which is born for code.
+## Data Folder
+Please put all experiment data and intermediate data in this folder. Do not put anything in its subfolder "links".
+You have the option to auto-sync the data with our storage server.
 
-For the Data folder, only link files will be tracked and uploaded to GitHub. Moreover, all data put in the Data folder would be automatically synchronized to the corresponding folder in the server. And add links for each file/folders at the root directory. (will not create links for sub-folders)
+## References Folder
+Currently, no files in this folder would be uploaded to GitHub. We suggest you sync files in this folder with Nutstore.
 
-Potential issues: if you want to download a link file directly from GitHub, please change the post-fix to .lnk manually to make things work fine. Also you have to make your link files to be read-only before uploading them. (check the [solution](https://github.com/owncloud/client/issues/4300) at here.)
+## Results Folder
+Currently, no files in this folder would be uploaded to GitHub. We suggest you sync files in this folder with Nutstore.
 
-For the Results folder, it is a folder where lots of cooperation happen. Therefore we need a perfect solution to tame Office files, Matlab figures, pictures and (even some videos) in Git way. Currently, the solution is using pull requests manually solve all conflicts.
-
-use FreeFilesSync to automatically synchronize files in the local folder to the remote folder on the server.
-[tutorial](https://freefilesync.org/manual.php?topic=schedule-batch-jobs)
+## Working Folder
+Files in this folder would not be uploaded or synced with any other devices/services. This is where you put anything unfinished, such as your programs to generate raw data. Please remember to put finished files into the above folders to keep track of them.
 
 
 In addition, people can use this README as a freeGate to explore other components in this GitHub-based project management system.

@@ -6,5 +6,4 @@ Warning:
 
 If you have any questions or want to search for support, please post an issue at [here](https://github.com/Wenlab/Template-Project-Repository/issues) and @young24 for help. Thank you.
 
-This should be there.
 Jul. 18, 2018 by Wenbin Yang (bysin7@gmail.com)
