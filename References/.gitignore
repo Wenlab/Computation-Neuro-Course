@@ -2,8 +2,6 @@
 # the highly-related-references can also be uploaded as a secret.
 /*
 !.gitignore
-!/links
-!/Highly-related-references
 !*.md
 !*.markdown
 
