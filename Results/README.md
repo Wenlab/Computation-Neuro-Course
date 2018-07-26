@@ -8,7 +8,7 @@ For the results folder, we designed this folder to only hold those finalized res
 
 Temporarily, only _markdown_ files (.md, .markdown), at the root directory, would be uploaded to GitHub.
 
-You have the option to sync the reference folder with Nutstore or EndNote. 
+You have the option to sync the folder with Nutstore. 
 
 If you need any help, or have questions, please post an issue on [here](https://github.com/Wenlab/Template-Project-Repository/issues). I'd like to help you.
 
