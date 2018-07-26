@@ -2,6 +2,7 @@
 # the highly-related-references can also be uploaded as a secret.
 /*
 !.gitignore
+!.gitattributes
 !*.md
 !*.markdown
 

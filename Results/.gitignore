@@ -1,6 +1,7 @@
 ### For the results folder, small references can be uploaded such as Office files.
 /*
 !.gitignore
+!.gitattributes
 !*.md
 !*.markdown
 
