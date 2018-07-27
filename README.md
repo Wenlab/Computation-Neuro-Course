@@ -1,3 +1,5 @@
+I found new idea. Do you agree with me?
+
 # The perfect-lab system
 ![The perfect lab](https://github.com/Wenlab/Template-Project-Repository/blob/master/System/Images/diagram-for-the-perfect-lab-system.jpg)
 Welcome to the perfect lab system!
