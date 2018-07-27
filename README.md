@@ -8,7 +8,8 @@ Welcome to the perfect lab system!
 - 不相信（别人的方法不适合我）
 - 不理解（GTD太复杂了，看不懂）
 
-_GitHub_ is born to help you.
+**_GitHub_ is born to help you.**
+
 It can solve plenty of existing/potential issues for the teamwork, and the personal business, such as:
 - 代码，文档的版本控制（e.g., 记录虫子解冻情况的文档）
 - 以课题为核心，有组织的归纳整理数据、参考文献、结果
@@ -82,6 +83,7 @@ _- 庞加莱_
 _"**The best thing** about programming is that it is **precise**.
 **The worst thing** about programming is that it has to be **precise**."_
 
+## A recommend book for you
 [自控力](https://book.douban.com/subject/10786473/), in which it tells you lots of practical ways to gain self-control.
 
 # GitHub Things to Do (I'll help you build up the system)
