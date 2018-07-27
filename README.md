@@ -1,5 +1,5 @@
 # The perfect-lab system
-![The ideal storage system](https://github.com/Wenlab/Template-Project-Repository/blob/master/System/Images/Diagram-for-the-perfect-lab-system.jpg)
+![The perfect lab](https://github.com/Wenlab/Template-Project-Repository/blob/master/System/Images/diagram-for-the-perfect-lab-system.jpg)
 Welcome to the perfect lab system!
 
 # Background
@@ -29,7 +29,7 @@ It can solve plenty of existing/potential issues for the teamwork, and the perso
 
 # A brief introdution to GitHub
 ## The GitHub environment and what we should pay attention
-![Diagram for GitHub flow](https://github.com/Wenlab/Template-Project-Repository/blob/master/System/Images/diagram-for-GitHub-flow.png)
+![Diagram for GitHub flow](https://github.com/Wenlab/Template-Project-Repository/blob/master/System/Images/diagram-for-GitHub-flow.PNG)
 - issues
 - wiki
 - branch (one branch stands for one issue)
