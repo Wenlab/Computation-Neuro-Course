@@ -1,3 +1,5 @@
+![666](https://avatars2.githubusercontent.com/u/13465279?s=400&v=4)
+
 I found new idea. Do you agree with me?
 
 # The perfect-lab system
