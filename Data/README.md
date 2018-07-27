@@ -6,4 +6,6 @@ For the Data folder, only link files will be tracked and uploaded to GitHub. Mor
 
 If you need any help, or have questions, please post an issue on [here](https://github.com/Wenlab/Template-Project-Repository/issues). I'd like to help you.
 
+**_Data is just data, without analysis, it is worthless._**
+
 Created on Jul. 19, 2018 by Wenbin Yang (bysin7@gmail.com)
