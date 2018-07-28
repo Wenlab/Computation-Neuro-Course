@@ -35,7 +35,7 @@ It can solve plenty of existing/potential issues for the teamwork, and the perso
 ## User guide
 ### Warnings !
 1. **请勿添加任何文件/文件夹到根目录 DO NOT ADD ANY FILES/FOLDERS AT THE ROOT OF YOUR SYNC FOLDER**, put the temporary files to the "Working" folder, files to the References folder and the Results folder to auto-sync with Nutstore.
-2. **除了the Data folder, 切勿放入大数据(> 100 MB); Except the Data folder, DO NOT PUT ANY LARGE FILES (> 100 MB) IN ANY FOLDER**
+2. **除了the Data, Working folders, 切勿放入大数据(> 100 MB); Except the Data, Working folders, DO NOT PUT ANY LARGE FILES (> 100 MB) IN ANY FOLDER**
 3. Please do not edit/rename/move/remove the configuration files again.
 4. It seems no Nutstore client for Mac to do the select-sync operation. (Jul. 28, 2018)
 
