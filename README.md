@@ -116,13 +116,6 @@ where you can
 - implement some smart techniques to make a more intelligent life
 
 
-
-
-
-
-
-
-
 # If you want to learn more
 1. [GitHub Review • Exploring Workflows](https://www.youtube.com/watch?v=EwWZbyjDs9c&t=3056s)
 in which it explains the basic idea of git workflow and how to implement it with Github

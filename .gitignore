@@ -1,14 +1,15 @@
 ### Ignore everything but the selected folders and files
 /*
+!.github
 !.gitignore
 !.LICENSE
 !README.md
 !/Code
-!/Data
-!/References
-!/Results
-!/System
-!/Working
+#!/Data
+#!/References
+#!/Results
+#!/System
+#!/Working
 
 
 
