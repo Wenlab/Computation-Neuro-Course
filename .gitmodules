@@ -1,0 +1,3 @@
+[submodule "Example-Module"]
+	path = Code/Example-Module
+	url = https://github.com/Wenlab/Example-Module
