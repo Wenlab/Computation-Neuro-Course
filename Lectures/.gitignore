@@ -6,4 +6,5 @@
 !*.markdown
 !*.lnk
 !*.pdf
-
+!/Fall2018
+.DS_Store
