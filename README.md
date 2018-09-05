@@ -3,7 +3,7 @@ This repository serves as an ongoing effort to create a systems and computationa
 
 **When**: Wednesday 9:45 am - 11:25 am, Fall 2018  
 **Where**: 东区第二教学楼2406  
-**Teacher**: 温泉 <qwen@ustc.edu.cn>
+**Teacher**: 温泉 <qwen@ustc.edu.cn>   
 **Teaching Fellow**: 李大光 <hrcs@mail.ustc.edu.cn>; 杨文斌 <young24@mail.ustc.edu.cn>  
 **Language**: English  
 
