@@ -5,4 +5,7 @@
 !*.md
 !*.markdown
 !*.lnk
-
+!*.pdf
+!*.txt
+!*.m
+!/Problem Set*
