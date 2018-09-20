@@ -9,3 +9,4 @@
 !*.txt
 !*.m
 !/Problem-Set*
+.DS_Store
