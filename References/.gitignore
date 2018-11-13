@@ -6,4 +6,4 @@
 !*.md
 !*.markdown
 !/PDFs
-
+.DS_Store
