@@ -9,4 +9,5 @@
 !*.txt
 !*.m
 !/Problem-Set*
+!/Final-Exam
 .DS_Store
