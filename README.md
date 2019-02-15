@@ -1,14 +1,6 @@
-# Computational-Neuroscience-Course
-This repository serves as an ongoing effort to create a systems and computational neuroscience course. I hope to develop a two-semester course for USTC biophysics students. The first semester will cover some basic materials, and the second semester will introduce more advanced topics for undergraduate and graduate students.  
+# Computational-Neuroscience-Course-Journal-Club
 
-**When**: Wednesday 9:45 am - 11:25 am, Fall 2018  
-**Where**: 东区第二教学楼2406  
-**Teacher**: 温泉 <qwen@ustc.edu.cn>  
-**Language**: English  
+**When**: Wednesday 2:00 pm - Spring 2019  
+**Where**: RM 208, School of Life Sciences, West Campus 
 
-**Recommended Textbooks**:  
-- [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://www.jianguoyun.com/p/DV2t9y8Qhtb2BhiZnG8)
-
-**Course Performance Evaluation**:  
-- Homework: 70%
-- Final: 30%
+We will discuss one topic at one time. The papers to be discussed are uploaded here two weeks before the presentation. One student will lead the discussion each week.
