@@ -5,4 +5,9 @@
 !*.md
 !*.markdown
 !*.lnk
-
+!*.pdf
+!*.txt
+!*.m
+!/Problem-Set*
+!/Final-Exam
+.DS_Store
