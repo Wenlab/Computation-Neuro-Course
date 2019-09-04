@@ -5,5 +5,5 @@
 !.gitattributes
 !*.md
 !*.markdown
-!/PDFs
+!/20190904
 .DS_Store
