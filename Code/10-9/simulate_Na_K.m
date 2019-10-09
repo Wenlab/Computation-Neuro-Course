@@ -15,12 +15,12 @@ tau = 1;
 t = 0:dt:30;
 T = length(t);
 V = ones(1,T)*(-60);
-n = zeros(1,T);
+n = ones(1,T)*(0.05);
 
 
 for i=1:T-1
 
-  if (i>T/2)
+  if (i>T/2)&&(i<T/2+10)
     I = 40;
   else
     I = 0;
@@ -31,7 +31,9 @@ for i=1:T-1
 
 end
 
-figure, plot(t,V);
+figure, plot(t,V); ylim([-80, 50]); 
+ylabel('membrane potential (mV)');
+xlabel('time (ms)');
 
 function p = p_inf(V,V_half,k)
 

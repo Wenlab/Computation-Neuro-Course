@@ -17,6 +17,8 @@ V = linspace(-80, 20, T);
 n = (I-g_L*(V-E_L)-g_Na*p_inf(V,Vm_half,k_m).*(V-E_Na))./(g_K*(V-E_K));
 
 figure; plot(V,n,V,p_inf(V,Vn_half,k_n));
+xlabel('membrane potential (mV)');
+ylabel('probability n');
 
 function p = p_inf(V,V_half,k)
 
