@@ -21,7 +21,7 @@ n = ones(1,T)*(0.05);
 for i=1:T-1
 
   if (i>T/2)&&(i<T/2+10)
-    I = 40;
+    I = 30;
   else
     I = 0;
   end
