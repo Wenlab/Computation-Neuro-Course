@@ -6,6 +6,7 @@
 !*.markdown
 !*.lnk
 !*.pdf
+!*.tif
 !*.txt
 !*.m
 !/Problem-Set*
