@@ -8,7 +8,8 @@ This repository serves as an ongoing effort to create a systems and computationa
 **Language**: English  
 
 **Recommended Textbooks**:  
-- [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://www.jianguoyun.com/p/DV2t9y8Qhtb2BhiZnG8)
+- [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
+- [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
 
 **Course Performance Evaluation**:  
 - Homework: 70%
