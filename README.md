@@ -5,7 +5,7 @@ This repository serves as an ongoing effort to create a systems and computationa
 **Where**: 东区第二教学楼2405  
 **Teacher**: 温泉 <qwen@ustc.edu.cn>   
 **Teaching Fellow**: 王泽臻 <wzz1999@mail.ustc.edu.cn>    
-**Language**: English  
+
 
 **Recommended Textbooks**:  
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
