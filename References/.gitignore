@@ -1,11 +1,11 @@
-### Track nothing but links and markdown files in the Reference folder
-# the highly-related-references can also be uploaded as a secret.
-/*
+### Reference folder contains pdf paper and markdown files
 !.gitignore
 !.gitattributes
 !*.md
 !*.markdown
-!/20190904
-!/20191113
-!/20191225
+!*.lnk
+!*.pdf
+!*.tif
+!*.txt
+!*.m
 .DS_Store
