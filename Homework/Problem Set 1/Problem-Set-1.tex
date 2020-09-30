@@ -41,7 +41,7 @@ Attached you will find morphology data txt files (.swc) of one pyramidal dendrit
 \end{itemize}
 In the swc file, each column has the following meaning (from left to right): segment index, segment type (cell body =1,, dendrite = 3), x coordinate ($\mu$m), y coordinate ($\mu$m), z coordinate ($\mu$m), segment diameter ($\mu$m), father segment index (root index = -1). 
 
-\section*{Derivation of the Goldman-Hodgkin-Katz formula for reversal potential}
+\section*{Derivation of the Goldman-Hodgkin-Katz formula for membrane potential}
 
 The reversal potential we discussed in the class only take into account one type of ion. However, some channels are not quite selective, and we need to combine the current flow from multiple ions, and the result is the Goldman-Hodgkin-Katz formula for membrane potential. I will write down the equation here, and it is your homework to provide the derivation of this formula.
 \begin{equation} V_{m}=\frac{k_{B}T}{e}\ln\left(\frac{\sum_{i=1}^{N}P_{M_{i}^{+}}[M_{i}^{+}]_{out}+\sum_{j=1}^{N}P_{A_{j}^{-}}[A_{j}^{-}]_{in}}{\sum_{i=1}^{N}P_{M_{i}^{+}}[M_{i}^{+}]_{in}+\sum_{j=1}^{N}P_{A_{j}^{-}}[A_{j}^{-}]_{out}}\right).
@@ -67,7 +67,7 @@ Consider the input current
 \begin{equation}
 I(t)=Q\sum_{k=-\infty }^{\infty }\delta (t-kT)
 \end{equation}
-where a charge Q crosses the membrane periodically.
+where a charge Q crosses the membrane periodically, and $\delta (x)$ is the Dirac delta function.
 
 \begin{itemize}
 \item  Derive the subthreshold membrane potential as a function of time
