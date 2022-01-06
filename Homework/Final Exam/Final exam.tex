@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\title{Final Exam of Computational Neuroscience}
+
+\date{Due January 18, 2022}
+
+\begin{document}
+\maketitle
+
+\section*{Poisson Spike-Train Statistics}
+1. Given the Homogeneous Poisson process (mean firing rate is independent of time), 
+\begin{equation}
+P(n)= \frac{(rT)^n}{n!}\exp(-rT).
+\end{equation}
+Calculate the mean $\langle n \rangle$ and variance $Var(n)$ of the spike count. Compute the Fano factor $Var(n)/\langle n \rangle$. 
+Calculate the kurtosis of spike count defined as $k = \langle n^4 \rangle - 3 \langle n^2 \rangle^2$ in the time interval $T$. 
+\\
+\\
+2. When the firing rate depends on time, we could also extend the homogeneous Poisson process to inhomogeneous Poisson process. When $n$ spikes occurs in an interval $T$ with $0<t_1<t_2<...<t_n<T$,  Prove that  the joint probability density is given by 
+\begin{equation}
+p(t_1,t_2,...,t_n)=\exp\left(-\int_0^Tr(t)dt\right)\prod_{i=1}^{n}r(t_i)
+\end{equation}
+Then, calculate the probability of seeing $n$ spikes $P(n)$ in the interval $T$. Check whether it has a similar expression as the homogeneous Poisson process and calculate the Fano Factor.
+\\
+\\
+3. Generate a Poisson spike train with a time-dependent fire rate $r(t) = r_0[1 + cos(2\pi t/\tau)]$ where $r_0$ = 100 Hz and $\tau = 300$ ms. Generate a spike train for 20 s and plot it.
+\\
+\\
+4*. Let's assume that the firing rate of a neuron has the following functional form: $r(t)=r_0+r_1\sin(\omega t+\theta)$, where the phase $\theta$  is drawn uniformly between $0$ and $2\pi$ for each trial. Calculate the Fano Factor for the spike count in the time interval $T$ (as a function of $T$).
+\\
+\\
+Note: Problems with * are optional. However, solving them will give you additional credits.
+
+\section*{Balanced Excitation and Inhibition}
+
+Consider an Integrate-and-Fire model. The timing of a spike is defined as the time where the membrane potential $V$ reaches the firing threshold value, $V_{th}$, from below. Whenever a spike occurs the voltage is reset immediately to a lower value, which for simplicity will be taken as $V_{res}=E_L$. In other words, $V(t_{spike}^{-})=V_{th}$, and $V(t_{spike}^{+})=V_{res}$. 
+\begin{equation}
+\begin{aligned}
+C_m\frac{dV}{dt}=-g_L(V-E_L)+I_e(t)  \\
+V(t_{spike}^{-})=V_{th} \\
+V(t_{spike}^{+})=V_{res} = E_L \\
+\end{aligned}
+\end{equation}   
+Here $I_e(t)$ is an external input to mimic synaptic inputs. Follow my lecture notes, if we define a new variable \[\tilde{V} = (V-V_{res})/(V_{th}-V_{res}),\] and denote \[I_c = g_{L}(V_{th}-V_{res}),\] the RC equation together with the resetting event can be rewritten as {
+\begin{equation}
+\begin{aligned}
+\tau\frac{d\tilde{V}}{dt}=-\tilde{V}+\frac{I_e}{I_c}   \\
+\tilde{V}(t_{spike}^{-})=1 \\
+\tilde{V}(t_{spike}^{+})=0
+\end{aligned}
+\end{equation}
+\begin{enumerate}
+\item Let us first consider that $\tilde{I}_e = \frac{I_e}{I_c}$ is a constant, namely time-independent. Derive the condition by which the system will fire action potentials.
+
+\item Consider the case that the model neuron now receives $N$ excitatory synaptic inputs, and each input can be modeled as Gaussian white noise, namely, 
+\[\tilde{I}_e = \sum_{i=1}^N w \xi_i(t),\] 
+Here $\xi_i(t)$ can be viewed as the activity of a presynaptic neuron, say proportional to firing rate. Each neuron's activity has the same mean and variance $\langle \xi(t) \rangle = u_0$, $\langle \xi(t) \xi(t') \rangle = \sigma^2 \delta (t-t')$; and the synaptic weight $w = \frac{J_0}{N}, \ J_0 >0$. Adjust $u_0, J_0$ so that the neuron would fire action potentials. Now explore the firing pattern of the neuron as you increase the number of inputs $N$. Ask how would the neuron behave if $N$ is large, say a few thousands. Note that in practice, you should consider noisy inputs as a discrete random time sequence satisfying $\langle \xi(t_k)^2 \rangle = \frac{1}{N}\frac{\sigma^2}{\Delta t}$, and $\langle \xi(t_k) \xi(t_k') \rangle = 0$, if $t_k \neq t_k'$. Here $\Delta t$ is the time step in your simulation. $\sigma^2 \sim O(1)$ is the variance of neural activity  and is assumed to be of the order of 1. 
+
+\item Now consider the neuron receives 20\% inhibitory synaptic inputs and 80\% excitatory inputs, and the synaptic weights for excitatory inputs are given by $w_+ > 0$, and those from inhibitory inputs are given by $w_- < 0$. Derive the condition (look at my lecture note) by which the total synaptic inputs have a finite variance that is independent of the total number of inputs $N$. Find the condition that the neuron can exhibit irregular spiking patterns as $N$ becomes large, and perform a simulation and compute the Fano factor of the spike statistics.   \textbf{Hint}: the mean total synaptic current $\langle \tilde{I}_e \rangle$ cannot be too small. It should drive the membrane potential close to the threshold, and it is the fluctuation of the input current that drives neurons above threshold \end{enumerate}
+
+
+\section*{Sensory Neuron from an Electric Fish}
+Electric fish can generate and sense electric fields. The response of a electrosensory neuron $R(t)$ is characterized by the firing rate, which is the number of spikes (action potential)occurred within a time window divided by the time bin size $\Delta t$.  Use the following equation 
+\begin{equation}
+R(t) = R_0 + \int_0^\infty D(\tau) s(t-\tau) dt,
+\end{equation}
+with $R_0 = 50$ Hz, and 
+\begin{equation}
+D(\tau) = -\cos (\frac{2\pi (\tau - 20 \mathrm{ ms})}{140 \mathrm{ ms}} )\exp ( - \frac{\tau}{60 \mathrm{ ms}} ) \mathrm{ Hz/ms},
+\end{equation}
+to predict the response of a neuron of the electrosensory lateral-line lobe to a stimulus. Use an approximate Gaussian white noise stimulus constructed by choosing a stimulus value every 10 ms ($\Delta t = 10$ ms) from a Gaussian distribution with zero mean and variance $\sigma^2 /\Delta t$, with $\sigma^2 =10$. A detailed description of white noise can be found on page 21 of the theoretical neuroscience textbook. 
+\begin{enumerate}
+\item[1.]Compute the firing rate over a 10 s period. 
+\item[2.]From the results, compute the firing rate-stimulus correlation function $Q_{rs}(\tau)$. 
+\item[3.]Compare $Q_{rs}(-\tau)/\sigma^2$ with the kernel $D(\tau)$ given above.
+\end{enumerate}
+
+
+\section*{Backpropagation rule}
+Derive the backpropagation rule for 3-layer networks. Suppose for the neurons, we use the following notations:
+\begin{equation}
+I_j^{i} = b_j + \sum_k r_k^{i-1}w_{jk} 
+\end{equation}
+\begin{equation}
+r = \frac{1}{1+e^{-I}}
+\end{equation}
+The superscript denotes which layer and subscript denotes which neuron in the layer. Please write out the equations for the value on the final third layer and take the gradient and show why backpropagation  algorithm works.
+
+
+
+\section*{Hopfield model} 
+In the Hopfield network, we make even a more drastic assumption that the activity of a neuron is a binary variable, $s_i\in [+1, -1]$. In the deterministic version of this model, the state of a cell is set according to the following equation
+\begin{equation}
+s_i(t+\Delta t) =\mathbf{sgn}(\sum_j w_{ij}s_j), \label{update rools for Hopfield network}
+\end{equation}
+We consider an asynchronous update rule for each neuron (choosing either a random or fixed update order and update $s_i$ according to that order at each clock cycle). 
+\\
+\\
+(1)  Check my lecture note and proof that any mixture of an odd number of memory patterns, such as
+\begin{equation}
+\xi^{mix}=\mathrm{sign}(\xi^{\mu_1}+\xi^{\mu_2}+ \xi^{\mu_3})
+\end{equation}
+are fixed point of the Hopfield model. 
+\\
+\\
+(2) Numerically simulate the dynamics of Hopfield network with random unbiased memory patterns, using 500 binary neurons. We want to draw some statistical conclusions, so in the tasks that follow, you should run many simulations using different sets of random stored patterns and, for each, start from many different initial conditions (so I recommend writing reasonably efficient routines, e.g. minimize the number of for-loops in MATLAB). For simplicity, you can choose the order of update of the neurons by going through neuron 1 to $N$ all the time.
+\\
+\\
+i) Probability of perfect recall: Store 10 patterns, run simulations to find the probability of perfect recall. That is, start with a pattern, corrupt some fraction of its bits, input the corrupted pattern to the network, and wait until the network settles into a fixed point. Plot the fraction of times you get perfect recall of the original state against the fraction of corrupted bits.
+\\
+\\
+ii) Memory retrieval with errors: Start the dynamics with one of the memory states. Plot the fraction of errors (fraction of incorrectly recalled bits) in the final state as a function of the number of stored patterns $P$. Change $P$ from 10 to 100.
+
+
+
+
+\end{document}
