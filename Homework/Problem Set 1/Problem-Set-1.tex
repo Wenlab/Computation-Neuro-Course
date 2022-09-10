@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\title{Problem Set I}
+\date{Due Wednesday, Oct  13, 2021}
+
+\begin{document}
+\maketitle
+
+\section*{Note on the Homework}
+
+Please read \href{https://github.com/Wenlab/Computation-Neuro-Course/wiki/%E4%BD%9C%E4%B8%9A%E6%8F%90%E4%BA%A4}{how to submit a homework} in our github page.
+
+\section*{Optimal length of a dendritic arbor}
+In the class, I have raised up a thought experiment about how to wire up a neural circuit of $N$ neurons with all-to-all potential connectivity. Each neuron will use wire with diameter $d = 0.3\ \mu m$. I have considered several models.
+\begin{itemize}
+\item {Point-to-point wires} 
+\item {use axons that meander through the space to find the cell body of another neuron}
+\item {use both axons and dendrites and they are treated symmetrically}
+\item {dendrite would grow a spine with length $s$}
+\end{itemize} 
+Recall how I define potential connectivity between neurons, and recall how I make the scaling argument. Make a similar derivation for the last case, and check whether this argument makes sense. Show how the volume of the network depends on $N$, $d$ and $s$,
+and how the total length of the dendrite $L$ from a single neuron depends on these parameters. 
+
+
+\section*{Quantitative Analysis of Dendritic Morphology}
+
+Attached you will find morphology data txt files (.swc) of one pyramidal dendrite, one Purkinjie dendrite, and one arbor from larval zebrafish. Use MATLAB or Python to write a simple program: 
+\begin{itemize}
+\item Load the data file. 
+\item Plot and visualize the neuronal 3D arbor shape. 
+\item write a function to compute the mean path length form a dendritic segment to the soma
+\item Compute the spine reach zone area of the Purkinje dendrite, namely the gray area that can be reached by growing a spine on a dendrite (slide 44), assuming the spine length $s = 2 ~\mu m$. And compare the total spine reach zone area with the arbor area, which may be defined as the convex hull area that embed the 2D arbor. For 3D pyramidal dendrites, choose a random 2D projection of the 3D morphology. Perform the same analysis. 
+\end{itemize}
+In the swc file, each column has the following meaning (from left to right): segment index, segment type (cell body =1, dendrite = 3), x coordinate ($\mu$m), y coordinate ($\mu$m), z coordinate ($\mu$m), segment diameter ($\mu$m), father segment index (root index = -1). 
+
+
+\section*{Motif Analysis of C. elegans Connectome}
+
+Attached you will find the Adjacency Matrix of the \textit{C. elegans} connectome, namely the the connectivity patterns of $\sim 277$ neurons in the worm can be represented by a matrix, in which $A[i,j] $ represents the number of connections from neuron $i$ to neuron $j$ (or from neuron $j$ to $i$, depending on the convention).  This matrix is asymmetric for a directed graph. Now use the software mfinder, also attached in the folder, to find 2 node and 3 node motifs. Present your results just like what we did in the lecture (slide 19), and show which motifs are overrepresented as compared to a random graph. There are detailed instruction on how to use the mfinder software, and make sure you understand what your are doing. 
+
+
+
+
+\end{document}
