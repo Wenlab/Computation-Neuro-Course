@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\title{Problem Set 2}
+\date{Due Thursday, Oct 13, 2022}
+
+\begin{document}
+\maketitle
+Please choose to solve 3 out of the following 4 problems. People who work out extra problems will have extra credits that will be weighted in the final score of the course. 
+
+\section*{Hodgkin and Huxley Model}
+
+The Hodgkin-Huxley model for generation of an action potential is constructed by a summation of leaky current, a delayed-rectified $\textrm{K}^{+}$ current, and a transient $\textrm{Na}^{+}$ current:
+\begin{eqnarray}
+\begin{aligned}
+C_{m}\frac{dV}{dt}=-\bar{g}_{\textrm{K}}n^{4}(V-E_{\textrm{K}})-\bar{g}_{\textrm{Na}}m^{3}h(V-E_{\textrm{Na}})-\bar{g}_L(V-E_L)+I_{e}.  \\  
+\frac{dn}{dt}=\alpha_n (1-n) - \beta_n n. \\
+\frac{dm}{dt}=\alpha_m(1-m) - \beta_m m. \\
+\frac{dh}{dt}=\alpha_h(1-h) - \beta_h h. \\
+\end{aligned}
+\end{eqnarray}
+\\
+\\
+(a) Please simulate the dynamic equations and check whether it could generate action potentials. Below I will provide detailed parameter values used in Hodgkin and Huxley model. 
+\[\alpha_n=\frac{0.01(V+55)}{1-\exp(-0.1(V+55))}, \ \beta_n=0.125\exp(-0.0125(V+65)),\]
+\[\alpha_m=\frac{0.1(V+40)}{1-\exp(-0.1(V+40))},\ \beta_m=4\exp(-0.0556(V+65)),\]
+\[\alpha_h=0.07\exp(-0.05(V+65)), \ \beta_h=\frac{1}{1+\exp(-0.1(V+35))}. \]
+These rates have dimensions $\textrm{ms}^{-1}$. The maximal conductances and reversal potentials used in the model are $\bar{g}_{\textrm{K}} = 0.36\  \textrm{mS/mm}^2$, $\bar{g}_{\textrm{Na}} = 1.2\  \textrm{mS/mm}^2$,   $\bar{g}_{\textrm{L}} = 0.003\  \textrm{mS/mm}^2$, $E_\textrm{L} = -54.387\  \textrm{mV}$, $E_\textrm{K} = -77\  \textrm{mV}$, $E_\textrm{Na} = 50\  \textrm{mV}$, $C_m = 10\ \textrm{nF/mm}^2$.
+\\
+\\
+(b) Show that there is a threshold current above which the system generates periodic pulses. Explore the frequency of the pulses as a function of current, just like what you did in the integrate-and-fire model.
+
+\section*{FitzHugh-Nagumo Model}
+
+The FitzHugh-Nagumo model 
+
+\begin{eqnarray}
+\dot{V} = V(a-V)(V-1) - w +I,\\
+\dot{w} = bV -cw,
+\end{eqnarray}
+imitates H-H models or the $I_{Na,p} + I_K$-model by having cubic (N-shaped) nullclines, where parameter $a$ describes the shape of the cubic parabola $V(a-V)(V-1)$, and $b>0$, $c\ge 0$ describe the kinetics of the recovery variable $w$. $I$ is the external current.
+
+\begin{enumerate}
+
+\item[(a)] Determine nullclines of the model and draw the two-dimensional phase portrait (vector field) of the model using MATLAB. 
+\item[(b)] Please analyze the stability of the fixed point $(0,0)$, and how they depends on the above parameters. plot the phase digram just like what we did in the class. What happens when the fixed point is not stable? 
+\item[(c)] When would the FitzHugh-Nagumo model have two stable fixed points?
+
+\end{enumerate}
+
+\section*{limit cycle behavior with two neurons}
+
+Let us consider a nonlinear network with limit cycle attractor with two neurons:
+
+\begin{eqnarray}
+\begin{aligned}
+\tau \frac{dx}{dt} = -x + \tanh(Jx - Ky)\\
+\tau \frac{dy}{dt} = -y + Gx\\
+\end{aligned}
+\end{eqnarray}
+where $J$, $K$, and $G >0$  are constants and $\tau$ is the time constant of the neurons. Note that x is an excitatory neuron and y is an inhibitory neuron. It is thus, a very generic model consisting of coupled activator and suppressor units. The system shows a variety of behaviors, including a stable limit cycle. 
+\begin{enumerate}
+\item[a.]	Find the fixed points of the system.  Find the set of parameters for which each fixed point exists.
+\item[b.]	Consider the fixed point $(x,y) = (0,0)$.  Setting $\tau = 1$, sketch the phase diagram of the fixed point, plotting $J$ against $KG$.  In the $J-KG$ plane, draw and label the following four regions:
+\begin{enumerate}
+\item[i.]	The fixed point is stable and the system converges monotonically to the stable state under small perturbation.
+\item[ii.]	The fixed point is stable and the system spirals back to the stable state under small perturbation.
+\item[iii.]	The fixed point is unstable and the system diverges monotonically away under small perturbation.
+\item[iv.]	The fixed point is unstable and the system spirals away under small perturbation.
+\end{enumerate}
+\item[c.]	Consider the case in which $(x,y) = (0,0)$ is unstable and the other fixed points do not exist. Find a closed surface in the x-y plane along which all the flow points inwards.  Qualitatively describe how the system evolves at long times in this case, given initial conditions inside the surface you found.
+\item[d.]	Draw a new phase diagram in the $J-KG$ plane for the entire system, classifying when the system has 1 stable fixed point, when it has 2 stable fixed points, and when it produces a limit cycle.
+\item[e.]	Numerically integrate this system of equations for $J$, $K$, and $G$ parameters representative of each of the four cases in (b), one of which will also be the case discussed in (c). Show how the system evolves in each case starting from an initial condition near $(0,0)$. Make sure you integrate long enough to see a steady state behavior emerge.  (You should hand in graphs of the $x-y$ plane.  For your own edification, plot $x(t)$ vs. $t$ and $y(t)$ vs. $t$ to make sure the system has reached a steady state.  If you use Matlab, ode45 is a useful integration command).
+
+\end{enumerate}
+
+\section*{Poisson Spike-Train Statistics}
+1. Given the Homogeneous Poisson process (mean firing rate is independent of time), 
+\begin{equation}
+P(n)= \frac{(rT)^n}{n!}\exp(-rT).
+\end{equation}
+Calculate the mean $\langle n \rangle$ and variance $Var(n)$ of the spike count. Compute the Fano factor $Var(n)/\langle n \rangle$. 
+Calculate the kurtosis of spike count defined as $k = \langle n^4 \rangle - 3 \langle n^2 \rangle^2$ in the time interval $T$. 
+\\
+\\
+2. For a constant rate Poisson process, every specific (up to a finite resolution) sequence of $N$ spikes occurring over a given time interval is equally likely. This seems paradoxical because we certainly do not expect to see all $N$ spikes appearing within the first 1 percent of the time interval. Resolve this paradox.
+\\
+\\
+3. When the firing rate depends on time, we could also extend the homogeneous Poisson process to inhomogeneous Poisson process. When $n$ spikes occurs in an interval $T$ with $0<t_1<t_2<...<t_n<T$,  Prove that  the joint probability density is given by 
+\begin{equation}
+p(t_1,t_2,...,t_n)=\exp\left(-\int_0^Tr(t)dt\right)\prod_{i=1}^{n}r(t_i)
+\end{equation}
+Then, calculate the probability of seeing $n$ spikes $P(n)$ in the interval $T$. Check whether it has a similar expression as the homogeneous Poisson process and calculate the Fano Factor.
+\\
+\\
+4. Generate a Poisson spike train with a time-dependent fire rate $r(t) = r_0[1 + cos(2\pi t/\tau)]$ where $r_0$ = 100 Hz and $\tau = 300$ ms. Generate a spike train for 20 s and plot it.
+\\
+\\
+
+
+
+\end{document}
