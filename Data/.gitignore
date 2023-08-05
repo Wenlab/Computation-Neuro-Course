@@ -1,6 +1,0 @@
-### Track nothing but links and markdown files in the Data folder
-/*
-!.gitignore
-/links
-!*.md
-!*.markdown

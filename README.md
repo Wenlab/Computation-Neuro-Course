@@ -1,8 +1,8 @@
 # Computational-Neuroscience-Course
 This repository serves as an ongoing effort to create a systems and computational neuroscience course. I hope to develop a two-semester course for USTC biophysics students. The first semester will cover some basic materials, and the second semester will introduce more advanced topics for undergraduate and graduate students.  
 
-**When**: Thursday 9:45 am - 11:20 am, Fall 2022  
-**Where**: 东区第二教学楼2208  
+**When**: Thursday 9:45 am - 11:20 am, Fall 2023  
+**Where**: 东区第二教学楼2603  
 **Teacher**: 温泉 <qwen@ustc.edu.cn>   
 **Teaching Fellow**: 李懿轩 <hyperdunk2019@mail.ustc.edu.cn> 
 
