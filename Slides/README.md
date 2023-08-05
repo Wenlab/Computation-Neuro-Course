@@ -1,1 +1,1 @@
-Slides and lecture notes for this course can be found in this folder. 
+Slides can be found here. 
