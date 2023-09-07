@@ -12,7 +12,7 @@ end
 n_points = 1000;
 width = 2000; % width of the window
 height = 300; % height of the window
-speed = 100; % unit: pixel per frame
+speed = 100 * 0.5; % unit: pixel per frame
 size_of_point = 10;
 frame_count = 0;
 n_change = 1;
@@ -24,9 +24,10 @@ hold on;
 axis([0 width 0 height]);
 set(gca, 'Color', [0.5 0.5 0.5]);
 
-% init positions of points randomly
+% init positions of points uniformly
 x = rand(1, n_points) * width;
 y = rand(1, n_points) * height;
+% y = randn(1, n_points) * height / 4 + height / 2;
 colors = [ones(1, n_points/2) zeros(1, n_points/2)];
 
 % draw init positions
