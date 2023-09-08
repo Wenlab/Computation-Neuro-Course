@@ -9,7 +9,6 @@ if is_changed ~=0 && is_changed ~= 1
 end
 
 % parameters
-n_points = 1000;
 width = 2000; % width of the window
 height = 300; % height of the window
 speed = 100 * 0.5; % unit: pixel per frame
@@ -25,8 +24,19 @@ axis([0 width 0 height]);
 set(gca, 'Color', [0.5 0.5 0.5]);
 
 % init positions of points uniformly
-x = rand(1, n_points) * width;
-y = height/n_points:height/n_points:height;
+n_rows = 20;
+n_cols = 50;
+
+dx = width / (n_cols - 1);
+dy = height / (n_rows - 1);
+
+[x, y] = meshgrid(0:dx:width, 0:dy:height);
+
+x = x(:)';
+y = y(:)';
+
+% colors
+n_points = n_rows * n_cols;
 colors = [ones(1, n_points/2) zeros(1, n_points/2)];
 colors = colors(randperm(n_points));
 
