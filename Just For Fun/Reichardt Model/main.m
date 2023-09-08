@@ -26,9 +26,9 @@ set(gca, 'Color', [0.5 0.5 0.5]);
 
 % init positions of points uniformly
 x = rand(1, n_points) * width;
-y = rand(1, n_points) * height;
-% y = randn(1, n_points) * height / 4 + height / 2;
+y = height/n_points:height/n_points:height;
 colors = [ones(1, n_points/2) zeros(1, n_points/2)];
+colors = colors(randperm(n_points));
 
 % draw init positions
 plot(x(colors == 1), y(colors == 1), 'w.', 'MarkerSize', size_of_point);
