@@ -15,4 +15,7 @@
 * Update
   * 我尝试把y的坐标固定而非随机生成，但是效果和用均匀分布随机生成相差无几。
   * 我尝试把x，y的坐标都固定而非随机生成，trivial。
-  * 
+  * 我增加了一个Julia版本的代码。
+* Acknowledgement
+  * [MATLAB版本的代码在GPT-4帮助下写成](https://chat.openai.com/share/ce5cebaa-964b-4ca8-b7a9-79d8dcaf4644)
+  * [Julia版本的代码由GPT-4帮助翻译](https://chat.openai.com/share/b28cc6eb-ad08-4f52-9923-3474551afec9)
