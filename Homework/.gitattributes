@@ -1,6 +1,6 @@
 ### gitattrubutes files to attribute binary files
 
-# Office files
+# Microsoft Office files
 *.xlsx -crlf -diff -merge
 *.xls -crlf -diff -merge
 *.docx -crlf -diff -merge
@@ -8,7 +8,7 @@
 *.pptx -crlf -diff -merge
 *.ppt -crlf -diff -merge
 
-# Endnote files
+# EndNote files
 *.enl -crlf -diff -merge
 *.enlx -crlf -diff -merge
 

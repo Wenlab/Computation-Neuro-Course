@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\title{Problem Set 2}
+\date{Due Saturday, Oct 19, 2023}
+
+\begin{document}
+\maketitle 
+
+\section*{Integrate and Fire Model}
+The Integrate-and-fire model of neuron's firing consists of of the following equation for the membrane potential (in dimensionless units):
+\begin{equation}
+\begin{aligned}
+\tau\frac{dV}{dt}=-V+I_e  \\
+V(t_{spike}^{-})=1 \\
+V(t_{spike}^{+})=0
+\end{aligned}
+\end{equation}   
+However, the model ignores two important biological observations. First, the action potential has a finite temporal width. Second, after firing an action potential,  a neuron is less likely to fire an action potential in a short refractory period, contributed by the large persistent voltage-gated potassium current. To incorporate these ingredients into the model, Here we consider two different modifications. 
+\\
+\\
+1. We assume that after a spike the neuron‘s potential is strongly refractory, namely it is unable to respond to an external input for a period of time, $\tau_r$ where $\tau_r$ is of the order of a few milliseconds. Mathematically, this assumption can be written as,
+\begin{equation}
+V(t)=0, t_{spike}< t < t_{spike}+\tau_r. 
+\end{equation}
+\\
+(a) Please compute the $f-I_e$ curve (firing frequency vs applied current) of this neuron. Analyze its behavior for large $I_e$, and compare it to the behavior at large I of the normal I-F neuron (i.e., without refractoriness). \textit{Hint}: Use Taylor expansion in $1/I_e$ . Additionally, explore the effect of $\tau_r$, by plotting the two curves (with and without refractoriness using the following parameters: $\tau$ = 20 ms $\tau_r$ = 2 ms.
+\\
+\\
+2. We introduce a negative adaptation current $I_a$, induced by the spiking of a neuron itself. The effect is to decrease the firing rate of subsequent spikes. A simple model of the adaptation current is given by
+\begin{equation}
+\label{adaptation current}
+\tau_a \frac{dI_a}{dt}=-I_a - J_a\tau_a\sum_i\delta(t-t^{spike}_{i}), 
+\end{equation}
+where $\tau_a$ is the time constant the adaptation current, $J_a$ is its strength. Note that every time the neuron spikes $I_a$ decreases discontinuously by an amount $J_a$. Now in Equation 1,  the total applied current is $I=I_e+I_a$.
+\\
+\\
+(b) *Please derive an implicit relationship for the firing rate of the neuron versus the applied constant current $I_e$, and solve it numerically for the following parameters: $\tau$ = 10 ms, $\tau_a$ = 200 ms, and $J_a =0.1$, or $J_a = 1$. Discuss what are the main effects of the adaptation on the $f-I_e$ curve?
+\\
+\\
+\textbf{Hint}: In the steady state, we shall assume that the neuron fires periodically with an interspike interval $T$ (which is the inverse of the firing rate). (1) Under these conditions, i.e., $V(t)=V(t+T)$, show that the solution to Equation \ref{adaptation current} is given by $I_a(t)=-J_a\sum_0^{\infty} e^{-\frac{nT+t}{\tau_a}}$ for $t \in [nT, (n+1)T]$. (2) Substitute in Equation 1 and derive the condition for threshold crossing. For $\frac{dx}{dt}+ax=x_0(t)$, prove that the general solution is $x(t)=x(0)e^{-at}+\int_{0}^{t}dt'e^{-a(t-t')}x_0(t')$. 
+\\
+\\
+(c) *Computer Simulation: You are provided with a sample MATLAB code for an integrate and fire neuron without the adaptation current which you may download from our website. Modify the code to include the adaptation current, and run the simulation to produce a curve of the firing rate as a function of the input with and without the adaptation current. Produce a plot of the membrane voltage in time for two different applied current values. Compare this f-I with the analytical solution. Also, compute the first inter-spike interval (ISI) for the different current values, and compare 1/ISI with the steady state firing rate. (Plot both on the same graph).
+\\
+\\
+Note: Problems with * are optional. However, solving them will give you additional credits.
+
+
+\section*{Hodgkin and Huxley Model}
+
+The Hodgkin-Huxley model for generation of an action potential is constructed by a summation of leaky current, a delayed-rectified $\textrm{K}^{+}$ current, and a transient $\textrm{Na}^{+}$ current:
+\begin{eqnarray}
+\begin{aligned}
+C_{m}\frac{dV}{dt}=-\bar{g}_{\textrm{K}}n^{4}(V-E_{\textrm{K}})-\bar{g}_{\textrm{Na}}m^{3}h(V-E_{\textrm{Na}})-\bar{g}_L(V-E_L)+I_{e}.  \\  
+\frac{dn}{dt}=\alpha_n (1-n) - \beta_n n. \\
+\frac{dm}{dt}=\alpha_m(1-m) - \beta_m m. \\
+\frac{dh}{dt}=\alpha_h(1-h) - \beta_h h. \\
+\end{aligned}
+\end{eqnarray}
+\\
+\\
+(a) Please simulate the dynamic equations and check whether it could generate action potentials. Below I will provide detailed parameter values used in Hodgkin and Huxley model. 
+\[\alpha_n=\frac{0.01(V+55)}{1-\exp(-0.1(V+55))}, \ \beta_n=0.125\exp(-0.0125(V+65)),\]
+\[\alpha_m=\frac{0.1(V+40)}{1-\exp(-0.1(V+40))},\ \beta_m=4\exp(-0.0556(V+65)),\]
+\[\alpha_h=0.07\exp(-0.05(V+65)), \ \beta_h=\frac{1}{1+\exp(-0.1(V+35))}. \]
+These rates have dimensions $\textrm{ms}^{-1}$. The maximal conductances and reversal potentials used in the model are $\bar{g}_{\textrm{K}} = 0.36\  \textrm{mS/mm}^2$, $\bar{g}_{\textrm{Na}} = 1.2\  \textrm{mS/mm}^2$,   $\bar{g}_{\textrm{L}} = 0.003\  \textrm{mS/mm}^2$, $E_\textrm{L} = -54.387\  \textrm{mV}$, $E_\textrm{K} = -77\  \textrm{mV}$, $E_\textrm{Na} = 50\  \textrm{mV}$, $C_m = 10\ \textrm{nF/mm}^2$.
+\\
+\\
+(b) Show that there is a threshold current above which the system generates periodic pulses. Explore the frequency of the pulses as a function of current, just like what you did in the integrate-and-fire model.
+
+
+
+
+\end{document}

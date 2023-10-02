@@ -15,3 +15,7 @@
 !/Problem Set 4
 !/Final Exam
 .DS_Store
+*.aux
+*.log
+*.out
+*.gz
