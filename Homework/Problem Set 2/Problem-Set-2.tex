@@ -11,6 +11,7 @@
 \section*{Integrate and Fire Model}
 The Integrate-and-fire model of neuron's firing consists of of the following equation for the membrane potential (in dimensionless units):
 \begin{equation}
+\label{vanilla current}
 \begin{aligned}
 \tau\frac{dV}{dt}=-V+I_e  \\
 V(t_{spike}^{-})=1 \\
@@ -33,13 +34,13 @@ V(t)=0, t_{spike}< t < t_{spike}+\tau_r.
 \label{adaptation current}
 \tau_a \frac{dI_a}{dt}=-I_a - J_a\tau_a\sum_i\delta(t-t^{spike}_{i}), 
 \end{equation}
-where $\tau_a$ is the time constant the adaptation current, $J_a$ is its strength. Note that every time the neuron spikes $I_a$ decreases discontinuously by an amount $J_a$. Now in Equation 1,  the total applied current is $I=I_e+I_a$.
+where $\tau_a$ is the time constant, $I_a$ the adaptation current, $J_a$ is its strength. Note that every time the neuron spikes $I_a$ decreases discontinuously by an amount $J_a$. Now in Equation 1,  the total applied current is $I=I_e+I_a$.
 \\
 \\
 (b) *Please derive an implicit relationship for the firing rate of the neuron versus the applied constant current $I_e$, and solve it numerically for the following parameters: $\tau$ = 10 ms, $\tau_a$ = 200 ms, and $J_a =0.1$, or $J_a = 1$. Discuss what are the main effects of the adaptation on the $f-I_e$ curve?
 \\
 \\
-\textbf{Hint}: In the steady state, we shall assume that the neuron fires periodically with an interspike interval $T$ (which is the inverse of the firing rate). (1) Under these conditions, i.e., $V(t)=V(t+T)$, show that the solution to Equation \ref{adaptation current} is given by $I_a(t)=-J_a\sum_0^{\infty} e^{-\frac{nT+t}{\tau_a}}$ for $t \in [nT, (n+1)T]$. (2) Substitute in Equation 1 and derive the condition for threshold crossing. For $\frac{dx}{dt}+ax=x_0(t)$, prove that the general solution is $x(t)=x(0)e^{-at}+\int_{0}^{t}dt'e^{-a(t-t')}x_0(t')$. 
+\textbf{Hint}: In the steady state, we shall assume that the neuron fires periodically with an interspike interval $T$ (which is the inverse of the firing rate). (1) Under these conditions, i.e., $V(t)=V(t+T)$, show that the solution to Equation \ref{adaptation current} is given by $I_a(t)=-J_a\sum_{n=0}^{\infty} e^{-\frac{nT+t}{\tau_a}}$ for $t \in [0, T]$. (2) Substitute in Equation \ref{vanilla current} and derive the condition for threshold crossing. For $\frac{dx}{dt}+ax=x_0(t)$, prove that the general solution is $x(t)=x(0)e^{-at}+\int_{0}^{t}dt'e^{-a(t-t')}x_0(t')$. 
 \\
 \\
 (c) *Computer Simulation: You are provided with a sample MATLAB code for an integrate and fire neuron without the adaptation current which you may download from our website. Modify the code to include the adaptation current, and run the simulation to produce a curve of the firing rate as a function of the input with and without the adaptation current. Produce a plot of the membrane voltage in time for two different applied current values. Compare this f-I with the analytical solution. Also, compute the first inter-spike interval (ISI) for the different current values, and compare 1/ISI with the steady state firing rate. (Plot both on the same graph).
