@@ -1,6 +1,6 @@
 # Baseline
 
-baseline (baseline)：指暂时为满分，然后考虑扣分项。
+baseline ：指暂时为满分，然后考虑扣分项。
 
 
 
@@ -43,7 +43,7 @@ baseline (baseline)：指暂时为满分，然后考虑扣分项。
   * 虽画图但不标单位的扣3分。
 * bonus of 1: 在总评中加2-3分。
   * 必须给出微分方程的解析解、数值解。
-  * 必须给出代数方程的解析解（隐式）、数值解。
+  * 必须给出代数方程的解析解、数值解。
 
 
 
@@ -57,8 +57,8 @@ baseline (baseline)：指暂时为满分，然后考虑扣分项。
   * 证出来则获得baseline
 * 4：满分33分
   * 每问11分
-* bonus of problem 2: 指明线性变换则获得baseline。在总评中加1-2分。
-* bonus of problem 4: 指明有先验和无先验的区别则获得baseline。在总评中加1-2分。
+* bonus of problem 2: 指明线性变换即可。在总评中加1-2分。
+* bonus of problem 4: 指明有先验和无先验的区别即可。在总评中加1-2分。
 
 
 
@@ -67,7 +67,7 @@ baseline (baseline)：指暂时为满分，然后考虑扣分项。
 * 1：满分50分
   * 每问25分
 * 2：满分50分
-  * 模拟正确则获得baseline。
+  * 推导正确、模拟正确则获得baseline。
 
 
 
