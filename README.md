@@ -2,7 +2,7 @@
 This repository serves as an ongoing effort to create a systems and computational neuroscience course. I hope to develop a two-semester course for USTC biophysics students. The first semester will cover some basic materials, and the second semester will introduce more advanced topics for undergraduate and graduate students.  
 
 **When**: Thursday 9:45 am - 11:20 am, Fall 2024  
-**Where**: 东区第二教学楼2403  
+**Where**: 东区第二教学楼2402  
 **Teacher**: 温泉 <qwen@ustc.edu.cn>   
 **Teaching Fellow**: 冼奇琪 <xianqiqi@mail.ustc.edu.cn> 程玉锟 <cyk_phy@mail.ustc.edu.cn> 李懿轩 <yixuanli@mail.ustc.edu.cn> 
 
@@ -11,7 +11,7 @@ This repository serves as an ongoing effort to create a systems and computationa
 - [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
 
 **For a general reader**:
-- [Model of the Mind](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966422)
+- [Models of the Mind](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966422)
 
 **Course Performance Evaluation**:  
 - Homework: 70% 
