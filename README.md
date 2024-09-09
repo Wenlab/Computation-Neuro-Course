@@ -4,7 +4,7 @@ This repository serves as an ongoing effort to create a systems and computationa
 **When**: Thursday 9:45 am - 11:20 am, Fall 2024  
 **Where**: 东区第二教学楼2403  
 **Teacher**: 温泉 <qwen@ustc.edu.cn>   
-**Teaching Fellow**: 冼奇琪 <xianqiqi@mail.ustc.edu.cn> 李懿轩 <hyperdunk2019@mail.ustc.edu.cn> 
+**Teaching Fellow**: 冼奇琪 <xianqiqi@mail.ustc.edu.cn> 程玉锟 <cyk_phy@mail.ustc.edu.cn> 李懿轩 <yixuanli@mail.ustc.edu.cn> 
 
 **Recommended Textbooks**:  
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
