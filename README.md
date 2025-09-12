@@ -1,14 +1,16 @@
 # Computational-Neuroscience-Course
 This repository serves as an ongoing effort to create a systems and computational neuroscience course. I hope to develop a two-semester course for USTC biophysics students. The first semester will cover some basic materials, and the second semester will introduce more advanced topics for undergraduate and graduate students.  
 
-**When**: Thursday 9:45 am - 11:20 am, Fall 2024  
-**Where**: 东区第二教学楼2402  
+**When**: Friday 9:45 am - 11:20 am, Fall 2025  
+**Where**: 东区第二教学楼2404  
 **Teacher**: 温泉 <qwen@ustc.edu.cn>   
-**Teaching Fellow**: 冼奇琪 <xianqiqi@mail.ustc.edu.cn> 程玉锟 <cyk_phy@mail.ustc.edu.cn> 李懿轩 <yixuanli@mail.ustc.edu.cn> 
+**Teaching Fellow**: 胡博洲 <hubozhou@mail.ustc.edu.cn>
 
 **Recommended Textbooks**:  
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
 - [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
+- Theoretical Neuroscience: Understanding Cognition
+- Principles of Neurobiology
 
 **For a general reader**:
 - [Models of the Mind](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966422)
