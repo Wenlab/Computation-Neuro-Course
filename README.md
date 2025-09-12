@@ -10,7 +10,8 @@ This repository serves as an ongoing effort to create a systems and computationa
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
 - [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
 - Theoretical Neuroscience: Understanding Cognition
-- Principles of Neurobiology
+- Searching for Princilples of Neurobiology, LIQUN LUO
+- Principles of Neurobiology, LIQUN LUO (Highly recommended)
 
 **For a general reader**:
 - [Models of the Mind](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966422)
