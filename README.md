@@ -11,7 +11,7 @@ This repository serves as an ongoing effort to create a systems and computationa
 - [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
 - Theoretical Neuroscience: Understanding Cognition
 - Searching for Princilples of Neurobiology, LIQUN LUO
-- Principles of Neurobiology, LIQUN LUO (Highly recommended)
+- Principles of Neurobiology, LIQUN LUO (Highly Recommend)
 
 **For a general reader**:
 - [Models of the Mind](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966422)
