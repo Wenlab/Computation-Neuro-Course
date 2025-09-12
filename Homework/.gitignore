@@ -1,0 +1,23 @@
+### For the results folder, small references can be uploaded such as Office files.
+/*
+!.gitignore
+!.gitattributes
+!*.md
+!*.markdown
+!*.lnk
+!*.pdf
+!*.tif
+!*.txt
+!*.m
+!Final Score.xlsx
+!/Problem Set 1
+!/Problem Set 2
+!/Problem Set 3
+!/Problem Set 4
+!/Problem Set 5
+!/Final Exam
+.DS_Store
+*.aux
+*.log
+*.out
+*.gz
