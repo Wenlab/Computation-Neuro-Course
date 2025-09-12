@@ -9,7 +9,6 @@ This repository serves as an ongoing effort to create a systems and computationa
 **Recommended Textbooks**:  
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
 - [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
-- Searching for Princilples of Neurobiology, LIQUN LUO
 - [Principles of Neurobiology](https://annas-archive.org/md5/7d1d9095410706ccd51dfb6c8795c91e)
 - [Theoretical Neuroscience: Understanding Cognition](https://annas-archive.org/md5/c187026f6890e1972098940f23d4742f)(Highly Recommend)
 
