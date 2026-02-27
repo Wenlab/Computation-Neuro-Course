@@ -1,1 +1,0 @@
-Lecture Notes can be found here.
