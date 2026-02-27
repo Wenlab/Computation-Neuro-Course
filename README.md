@@ -1,30 +1,96 @@
-# Computational-Neuroscience-Course
-This repository serves as an ongoing effort to create a systems and computational neuroscience course. I hope to develop a two-semester course for USTC biophysics students. The first semester will cover some basic materials, and the second semester will introduce more advanced topics for undergraduate and graduate students.  
+# Computational Neuroscience Course
 
-**When**: Thursday 9:45 am - 11:20 am, Fall 2024  
-**Where**: 东区第二教学楼2402  
-**Teacher**: 温泉 <qwen@ustc.edu.cn>   
-**Teaching Fellow**: 冼奇琪 <xianqiqi@mail.ustc.edu.cn> 程玉锟 <cyk_phy@mail.ustc.edu.cn> 李懿轩 <yixuanli@mail.ustc.edu.cn> 
+This repository supports an ongoing effort to build a systems and computational neuroscience course for USTC biophysics students. The goal is a two-semester sequence: the first semester covers foundational material, and the second introduces more advanced topics for undergraduate and graduate students.
 
-**Recommended Textbooks**:  
+| | |
+|---|---|
+| **When** | Monday 2:00 pm – 3:35 pm, Spring 2026 |
+| **Where** | 高新区 G3-110 |
+| **Teacher** | 温泉 &lt;qwen@ustc.edu.cn&gt; |
+
+## Grading
+
+| Component | Weight |
+|---|---|
+| Homework | 70% |
+| Final exam (take-home) | 30% |
+
+## Prerequisites
+
+- High school knowledge of biology and neuroscience
+- Proficiency in Python, MATLAB, or Julia
+- Working knowledge of multivariate calculus, probability theory, linear algebra, and differential equations
+
+## Recommended Textbooks
+
+**Core**
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
 - [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
+- [Principles of Neurobiology](https://annas-archive.org/md5/7d1d9095410706ccd51dfb6c8795c91e)
+- [Theoretical Neuroscience: Understanding Cognition](https://annas-archive.org/md5/c187026f6890e1972098940f23d4742f)
 
-**For a general reader**:
+**General audience**
 - [Models of the Mind](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966422)
 
-**Course Performance Evaluation**:  
-- Homework: 70% 
-- Final: 30% (take-home exam)
+## Course Overview
 
-**Prerequisite**:
-- High school knowledge of biology and neuroscience
-- Proficient in Python/MATLAB/Julia
-- Working knowledge of Multivariate Calculus, Probability Theory, Linear Algebra, and Differential Equations
+The emergence of intelligence and behavior from the complex interactions within the brain remains one of the most significant unsolved mysteries in modern science. In the last decade, rapid advancements in experimental tools have enabled us to monitor and manipulate brain circuits with unprecedented precision. Yet neuroscientists are still navigating the intricate landscapes of brain structures and dynamics. Mathematical theory has become essential for integrating seemingly unrelated evidence, generating new insights, guiding experiments, and identifying organizing principles of brain function.
 
+This course explores how physics, engineering, and mathematics have shaped our understanding of the brain — in particular, the relationship between structure, dynamics, representation, and behavior. A central theme is comparing biological learning rules and architectures with modern machine learning methods. Special topics may include wiring optimization in neural circuits, attractor and chaotic dynamics in neural networks, sensory and motor representations, biological learning rules, Hopfield networks, and hierarchical control of behavior.
 
-## Summary
-The emergence of intelligence and behavior from the complex interactions within the brain remains one of the most significant and unsolved mysteries in modern science. This is an exciting era. In the last decade, we have witnessed rapid advancements in experimental tools that now enable us to monitor and manipulate brain circuits with unprecedented precision. However, it is also a perplexing time. Neuroscientists are navigating the intricate landscapes of brain structures and dynamics. Mathematical theory has become crucial for integrating seemingly unrelated evidence, providing new insights, guiding new experiments, and identifying concepts and principles of brain function.
+## Spring 2026 Curriculum
 
-In this course, we will explore how physics, engineering, and mathematics have shaped our understanding of the brain. In particular, we will investigate the relationship between structure, dynamics, representation, and behavior. Special topics may include wiring optimization in neural circuit, attractor and chaotic dynamics in neural network, sensory and motor representation, biological learning rules, Hopfield network, and hierarchical control of behaviors. We will also discuss connections with modern machine learning methods. I will strive to balance breadth and depth, highlighting the challenges we face in developing quantitative theories or models of the mind.
+The course consists of 8 lectures (~90 minutes each).
 
+### 1. Computing Architectures: From Neurons to Nodes
+- Biophysics of real neurons and dendritic integration vs. artificial activation functions
+- Energy efficiency and parallel processing across biological and GPU architectures
+
+### 2. Neural Code Representations & Network Dynamics
+- Information encoding (rate vs. temporal coding) and population vectors
+- Network dynamics and neural manifolds; random matrix theory and stability in RNNs
+
+### 3. Learning Rules I: The Credit Assignment Problem
+- Biological plasticity (Hebbian learning and STDP) vs. gradient descent and backpropagation
+- Biological approximations of backprop (e.g., predictive coding)
+
+### 4. Learning Rules II: Reward and Reinforcement
+- The dopamine system and reward prediction errors in the basal ganglia
+- Temporal difference (TD) learning and Q-learning mapped to biological pathways
+
+### 5. Sensory Processing and Perception
+- Visual hierarchies (retina to IT cortex) vs. convolutional neural networks (CNNs)
+- Object recognition invariances and robustness in natural vs. artificial vision
+
+### 6. Memory, Space, and Continuous Learning
+- The hippocampal–entorhinal system: place cells, grid cells, and systems consolidation
+- Catastrophic forgetting in AI and solutions via experience replay and complementary learning systems
+
+### 7. Motor Control and Embodied AI
+- Motor subspace dynamics and hierarchical control of behavior
+- Sensorimotor integration in model organisms (C. elegans, larval zebrafish) and implications for robotic control
+
+### 8. Future Frontiers: Generalization and Cognitive Architecture
+- Few-shot learning and unsupervised learning gaps
+- Evaluating modern architectures (Transformers/LLMs) against known biological cognitive structures
+
+## Repository Structure
+
+```
+.
+├── archive/          # Fall 2024 course materials
+│   ├── Advertisement/
+│   ├── Books/
+│   ├── Homework/
+│   ├── Just_For_Fun/
+│   ├── Notes_of_Teacher/
+│   ├── Papers/
+│   └── Slides/
+├── Advertisement/    # Spring 2026 course announcements
+├── Books/            # Reading list and book resources
+├── Homework/         # Problem sets and final exam
+├── Just_For_Fun/     # Optional explorations and demos
+├── Notes_of_Teacher/ # Lecture notes
+├── Papers/           # Assigned and supplementary papers
+└── Slides/           # Lecture slides
+```
