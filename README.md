@@ -1,6 +1,6 @@
 # Computational Neuroscience Course
 
-This repository supports an ongoing effort to build a systems and computational neuroscience course for USTC biophysics students. The goal is a two-semester sequence: the first semester covers foundational material, and the second introduces more advanced topics for undergraduate and graduate students.
+This repository supports an ongoing effort to build a systems and computational neuroscience course for USTC students. The goal is a two-semester sequence: the first semester covers foundational material, and the second introduces more advanced topics for undergraduate and graduate students.
 
 | | |
 |---|---|
@@ -78,15 +78,6 @@ The course consists of 8 lectures (~90 minutes each).
 
 ```
 .
-├── archive/          # Fall 2024 course materials
-│   ├── Advertisement/
-│   ├── Books/
-│   ├── Homework/
-│   ├── Just_For_Fun/
-│   ├── Notes_of_Teacher/
-│   ├── Papers/
-│   └── Slides/
-├── Advertisement/    # Spring 2026 course announcements
 ├── Books/            # Reading list and book resources
 ├── Homework/         # Problem sets and final exam
 ├── Just_For_Fun/     # Optional explorations and demos
