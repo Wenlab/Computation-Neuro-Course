@@ -40,7 +40,7 @@ This course explores how physics, engineering, and mathematics have shaped our u
 
 ## Spring 2026 Curriculum
 
-The course consists of 8 lectures (~90 minutes each).
+The course consists of 8 lectures (~90 minutes each). In this semester, we will explore the connections between Natural and Artificial Intelligence. 
 
 ### 1. Computing Architectures: From Neurons to Nodes
 - Biophysics of real neurons and dendritic integration vs. artificial activation functions
