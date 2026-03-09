@@ -25,7 +25,7 @@ This repository supports an ongoing effort to build a systems and computational 
 
 **Core**
 - [Theoretical Neuroscience: Computational and Mathematical Modeling the Neural System](https://mitpress.ublish.com/book/theoretical-neuroscience)
-- [Principles of Neural Design](https://mitpress.mit.edu/books/principles-neural-design)
+- [Principles of Neural Design](https://direct.mit.edu/books/monograph/3078/Principles-of-Neural-Design)
 - [Principles of Neurobiology](https://www.routledge.com/Principles-of-Neurobiology/Luo/p/book/9780815346050)
 - [Theoretical Neuroscience: Understanding Cognition](https://www.taylorfrancis.com/books/mono/10.1201/9781003459361/theoretical-neuroscience-xiao-jing-wang)
 
