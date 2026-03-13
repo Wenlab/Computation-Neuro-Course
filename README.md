@@ -7,7 +7,7 @@ This repository supports an ongoing effort to build a systems and computational 
 | **When** | Monday 2:00 pm – 3:35 pm, Spring 2026 |
 | **Where** | 高新区 G3-110 |
 | **Teacher** | 温泉 &lt;qwen@ustc.edu.cn&gt; |
-
+| **TA** |胡博洲 &lt;hubozhou@mail.ustc.edu.cn&gt; |
 ## Grading
 
 | Component | Weight |
