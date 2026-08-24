@@ -2,8 +2,8 @@
 This repository serves as an ongoing effort to create a systems and computational neuroscience course. I hope to develop a two-semester course for USTC biophysics students. The first semester will cover some basic materials, and the second semester will introduce more advanced topics for undergraduate and graduate students.  
 
 **When**: Tuesday 9:45 am - 11:20 am, Fall 2026  
-**Where**: 东区第二教学楼2307
-**Teacher**: 温泉 <qwen@ustc.edu.cn>   
+**Where**: 东区第二教学楼2307   
+**Teacher**: 温泉 <qwen@ustc.edu.cn>
 **Teaching Assistant**: 张奇霖 <zhangqilin8879@mail.ustc.edu.cn>
 
 **Recommended Textbooks**:  
