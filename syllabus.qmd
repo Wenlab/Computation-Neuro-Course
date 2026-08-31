@@ -1,0 +1,93 @@
+---
+title: "Syllabus"
+subtitle: "CNeuro 501 · Fall 2026"
+toc: true
+---
+
+<div class="page-head">
+<h1>Syllabus</h1>
+<p>BIO4502e.01 · Computational Neuroscience · Fall 2026</p>
+</div>
+
+
+## Course Description
+
+The emergence of intelligence and behavior from the complex interactions within the brain remains one of the most significant and unsolved mysteries in modern science. This is an exciting era. In the last decade, we have witnessed rapid advancements in experimental tools that now enable us to monitor and manipulate brain circuits with unprecedented precision. However, it is also a perplexing time. Neuroscientists are navigating the intricate landscapes of brain structures and dynamics. Mathematical theory has become crucial for integrating seemingly unrelated evidence, providing new insights, guiding new experiments, and identifying concepts and principles of brain function.
+
+In this course, we will explore how physics, engineering, and mathematics have shaped our understanding of the brain. In particular, we will investigate the relationship between structure, dynamics, representation, and behavior. Special topics may include wiring optimization in neural circuit, attractor and chaotic dynamics in neural network, sensory and motor representation, biological learning rules, Hopfield network, and hierarchical control of behaviors. We will also discuss connections with modern machine learning methods. 
+
+
+## Topics
+
+Computational neuroscience originated from the attempt to apply mathematics and physics in neuroscience. Researchers
+believe that such conjucture will offer us more insights into how brain works. These mathematical and physical tools
+are similar to what we meet in some branches of artificial intelligence, which to some degrees shows their affinity. 
+
+It is necessary to clarify that we do not plan to offer a comprehensive map of how brain works or how intelligence
+emerges. It goes beyond our time and capability. Besides, we will not dip into the fundamental mechanics which preserves basic physiological activities. They are reserved to other courses, i.e., biophysics. We will narrow down
+to a collection of works from 1900s to 2020s, and to its main part, from 1952 to 1997. Compared with some rigorious physics courses, it is more like a gallery. Party haven't been over in neuroscience. 
+
+In this course, we will consider these topics in order, if time is allowed,
+
+- Neuromorpholohy: we can explain the morphology of general neuronal elements, i.e., spines, dendrites, etc., via a
+normative pathway. 
+In this part you will find the direct connection between computational neuroscience and physics. 
+
+- Single Neuron Behavior: We will introduce Hodgekin-Hulxuly model which is published in series of papers in 1952, and provide a biologically plausible model.
+This part has relative independence in this course. Some comments claim that it gives little help to an understanding
+of population activity. But the variants in dynamics is significant sometimes, and may offer new insights, i.e., BTSP.
+
+- From Single to Multi-Neuron Behavior: Compared with cellular perspective and self-consistent network perspective, 
+this part provides a interface, focusing on encoding and decoding information in neural system. 
+We will meet plenty of statistics and information theory in this part, but it gives us something testable. Anyway,
+math for neuroscience sake. 
+
+- 
+
+
+
+## Prerequisites
+
+High school knowledge of neuroscience. A good working knowledge of multivariable calculus,
+probability theory, linear algebra and differential equations. Familiarity of a programming language. 
+
+
+## Grading
+
+| Component | Weight |
+|:---:|:---:|
+| Homework | 70% |
+| Final (Take Home Exam) | 30% |
+| Bonus | Depend |
+
+**Score** = 70% × (average homework) + 30% × (final exam) + bonus
+
+
+## Recommended Textbooks
+
+- Abbott &amp; Dayan, *Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems* — [MIT Press](https://mitpress.mit.edu/9780262041997/theoretical-neuroscience/)
+- Xiao-Jing Wang, *Theoretical Neuroscience: Understanding Cognition* — [Taylor &amp; Francis](https://www.taylorfrancis.com/books/mono/10.1201/9781003459361/theoretical-neuroscience-xiao-jing-wang)
+- Sterling &amp; Laughlin, *Principles of Neural Design* — [MIT Press](https://mitpress.mit.edu/9780262534680/principles-of-neural-design/)
+- Grace Lindsay, *Models of the Mind: How Physics, Engineering and Mathematics Have Shaped Our Understanding of the Brain* — [Amazon](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966430)
+
+*Tip: You don't have to read them all!*
+
+
+## Resources of Previous Semesters
+
+The course repository provides course resources of different semesters by distinct branches. If you are interested in 
+how senior students learned this course in good old days, or in want of a preview of topics we will conider, you can check these documents. 
+
+
+## Policies
+
+- **Late homework:** Homework submitted after the deadline will incur a penalty of **2 points per day**, unless you have emailed the TA in advance to arrange an extension.
+
+- **Collaboration:** Collaboration is allowed, but you must state it in your submission, cite all sources properly, and clearly declare any use of AI tools. In this era, we will unavoidably collaborate with AI tools, and sometimes feel
+overwhelmed or [*discouraged*](https://e.vnexpress.net/news/news/education/china-s-1st-female-fields-medalist-felt-discouraged-at-university-sparking-education-system-debate-5108204.html). Thus, as a researcher, you should try to preserve your *subjectivity*.
+
+> ...if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their results, that is correct and properly attributed, then the result should not be published.
+
+— Terence Tao, the commentary of the [Leiden Declaration](https://leidendeclaration.ai/) on Artificial Intelligence and Mathematics, in "[Mathematics in the Age of AI](https://arxiv.org/abs/2608.16753)", ICM 2026
+
+<div class="pagefoot">page maintained by <a href="https://github.com/Zenobiaql">Qilin Zhang</a> <!-- TODO: 维护人 --></div>

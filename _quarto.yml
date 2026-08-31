@@ -1,0 +1,29 @@
+project:
+  type: website
+  resources:
+    - images/     
+
+website:
+  title: "Computational Neuroscience"
+  description: "Course homepage for Computational Neuroscience (CNeuro 501), Fall 2026"
+
+  navbar:
+    background: "#0072c1"
+    foreground: "#ffffff"
+    title: "WenLab"                  
+    logo: images/wenlab_logo.png     
+    search: false
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Syllabus
+        href: syllabus.qmd
+
+format:
+  html:
+    theme: cosmo           
+    css: styles.css
+    include-after-body:
+      - includes/wenlab-brand.html   
+    page-layout: full      
+    lang: en

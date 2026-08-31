@@ -1,0 +1,19 @@
+# Quarto build output
+/_site/
+
+# reference for agent
+/_notes/
+
+/.tools/
+
+# Quarto cache / temp
+/.quarto/
+
+# OS files
+.DS_Store
+
+.Rproj.user
+__pycache__/
+*.pyc
+
+**/*.quarto_ipynb

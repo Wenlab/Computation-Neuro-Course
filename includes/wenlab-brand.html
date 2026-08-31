@@ -1,0 +1,8 @@
+<!-- 将导航栏品牌（logo + WenLab 文字）链接指向实验室官网 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("#quarto-header .navbar-brand").forEach(function (a) {
+    a.href = "https://www.wenlab.org/";
+  });
+});
+</script>
