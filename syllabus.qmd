@@ -42,14 +42,25 @@ this part provides a interface, focusing on encoding and decoding information in
 We will meet plenty of statistics and information theory in this part, but it gives us something testable. Anyway,
 math for neuroscience sake. 
 
-- 
+- Multi Neuron Behavior: In this part, we will introduce so-called neural network, and it is also the most relative
+part compared with field of artificial intelliegnce of 2010s. However, large language model has decisively changed
+our life and the domain of AI. Computational neuroscience is the castle of connectivilism, but the latter will never
+stay in its castle. 
 
+For deeper and more frontier topics in computational neuroscience, there is a course for graduate student in the 
+spring. If you are interested in other topics, welcome to the lab and journal club 4pm every Friday afternoon. 
 
 
 ## Prerequisites
 
-High school knowledge of neuroscience. A good working knowledge of multivariable calculus,
-probability theory, linear algebra and differential equations. Familiarity of a programming language. 
+Mathematical tools are required in each part, while physics is mostly in part one and two. Here is the list. 
+
+- Part 1: some physics mindset
+- Part 2: ODE
+- Part 3: statistics, probability theory, linear algebra, information theory
+- Part 4: statistical physics, machine learning
+
+*Tip: Please do not try to master all of them. Collaboration is profound in this course.* 
 
 
 ## Grading
@@ -60,7 +71,12 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 | Final (Take Home Exam) | 30% |
 | Bonus | Depend |
 
+If a solution with novelty or about a question tagged bonus, you can get a bonus.
+Posting good question or offering good answer on the issue page will also receive a bonus. 
+
 **Score** = 70% × (average homework) + 30% × (final exam) + bonus
+
+*Tip: Although we have not met such scene, please do not abuse GitHub issue page for bonus. Explanation preserved by TA.*
 
 
 ## Recommended Textbooks
@@ -70,12 +86,13 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 - Sterling &amp; Laughlin, *Principles of Neural Design* — [MIT Press](https://mitpress.mit.edu/9780262534680/principles-of-neural-design/)
 - Grace Lindsay, *Models of the Mind: How Physics, Engineering and Mathematics Have Shaped Our Understanding of the Brain* — [Amazon](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966430)
 
-*Tip: You don't have to read them all!*
+*Tip: You don't have to read them all.
+Reducing redundant information is another important capability in this course.*
 
 
 ## Resources of Previous Semesters
 
-The course repository provides course resources of different semesters by distinct branches. If you are interested in 
+The [course repository](https://github.com/Wenlab/Computation-Neuro-Course) provides course resources of different semesters by distinct branches. If you are interested in 
 how senior students learned this course in good old days, or in want of a preview of topics we will conider, you can check these documents. 
 
 

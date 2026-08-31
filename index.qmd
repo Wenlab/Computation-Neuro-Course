@@ -1,27 +1,17 @@
 ---
 title: "Computational Neuroscience"
-subtitle: "CNeuro 501 · Fall 2026"
 ---
-
-<!-- ============================================================
-  课程主页 —— CS 61A 浅蓝风格 + Princeton 字符风格
-  主页（本页）：课程信息 / 公告 / 子页入口 / 资源
-  单页主页：课程信息 + 公告 + 大课表 + 资源；子页 syllabus.qmd（教学大纲）
-  占位内容均标有 TODO，请替换为真实信息。
-============================================================ -->
 
 <div class="header-table" id="course-info">
 <div class="header-main">
 <h1>Computational Neuroscience</h1>
-<p>BIO4502e.01, University of Science and Technology of China (Fall 2026) <!-- TODO: 学校名与学期 --></p>
-<p><b>time</b>: 2(3,4), Week 1-18 <!-- TODO: 上课时间 --></p>
-<p><b>location</b>: Room 2307 <!-- TODO: 教室 --></p>
-<p><b>instructor</b>: Prof. Quan Wen <!-- TODO: 讲师姓名与主页链接 -->
+<p>BIO4502e.01, University of Science and Technology of China (Fall 2026)</p>
+<p><b>time</b>: 2(3,4), Week 1-18 </p>
+<p><b>location</b>: Room 2307 </p>
+<p><b>instructor</b>: Prof. Quan Wen
 <p><b>TA</b>: Qilin Zhang<br>(office hours: Sat 7-8pm &amp; by appt, LSB 205, West Campus)</p>
 </div>
 <div class="header-img">
-<!-- 原版示意图（Bair & Koch 1996 raster），如需更换直接替换 images/ 下文件。
-     注意：HTML 标签不能缩进 4 空格，否则会被 Markdown 当成代码块 -->
 <img src="images/4_designs.png" height="192" alt="four designs">
 </div>
 </div>
@@ -60,11 +50,11 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 <tr><th style="text-align: center;">Week</th><th style="text-align: center;">Date</th><th>Topic</th><th>Readings</th><th>Slides</th><th>Notes</th><th>Homework</th></tr>
 </thead>
 <tbody>
-<tr class="week-odd"><td rowspan="1" style="text-align: center;">W1</td><td style="text-align: center;">Tue<br>9/1</td><td>Course Intro</td><td><a href="readings/Introduction.pdf">Introduction</a></td><td><a href="slides/Lec.01.html">Lec.01</a> </td><td><a href="notes/lec01.pdf">Notes.01</a></td><td></td></tr>
+<tr class="week-odd"><td rowspan="1" style="text-align: center;">W1</td><td style="text-align: center;">Tue<br>9/1</td><td></td><td></a></td><td> </td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W2</td><td style="text-align: center;">Tue<br>9/8</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W3</td><td style="text-align: center;">Tue<br>9/15</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W4</td><td style="text-align: center;">Tue<br>9/22</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr class="week-odd"><td rowspan="1" style="text-align: center;">W5</td><td style="text-align: center;">Tue<br>9/29</td><td></td><td></td><td></td><td></td><td><a href="homework/hw1.pdf">HW1</a> <span class="due">Due 10.11</span></td></tr>
+<tr class="week-odd"><td rowspan="1" style="text-align: center;">W5</td><td style="text-align: center;">Tue<br>9/29</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="2" style="text-align: center;">W6</td><td style="text-align: center;">Tue<br>10/6</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td style="text-align: center;">Sat<br>10/10</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W7</td><td style="text-align: center;">Tue<br>10/13</td><td></td><td></a></td><td></td><td></td><td></td></tr>
