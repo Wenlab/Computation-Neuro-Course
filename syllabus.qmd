@@ -19,48 +19,44 @@ In this course, we will explore how physics, engineering, and mathematics have s
 
 ## Topics
 
-Computational neuroscience originated from the attempt to apply mathematics and physics in neuroscience. Researchers
-believe that such conjucture will offer us more insights into how brain works. These mathematical and physical tools
-are similar to what we meet in some branches of artificial intelligence, which to some degrees shows their affinity. 
+Computational neuroscience originated from the attempt to apply mathematics and physics to neuroscience. Researchers
+believe that such an approach will offer us more insight into how the brain works. These mathematical and physical tools
+are similar to those encountered in some branches of artificial intelligence — a kinship that, to some degree, reflects their shared foundations.
 
-It is necessary to clarify that we do not plan to offer a comprehensive map of how brain works or how intelligence
-emerges. It goes beyond our time and capability. Besides, we will not dip into the fundamental mechanics which preserves basic physiological activities. They are reserved to other courses, i.e., biophysics. We will narrow down
-to a collection of works from 1900s to 2020s, and to its main part, from 1952 to 1997. Compared with some rigorious physics courses, it is more like a gallery. Party haven't been over in neuroscience. 
+It is necessary to clarify that we do not plan to offer a comprehensive map of how the brain works or how intelligence
+emerges. Nor will we dig into the fundamental mechanisms that sustain basic
+physiological activities. We will instead narrow our scope to
+a collection of works from the 1900s to the 2020s, and in particular from 1952 to 1997. Meanwhile, because of the topics we want to introduce are cross-scale, the relations of each part is not so compact. Compared with some
+physics courses, it is more like a gallery.
 
-In this course, we will consider these topics in order, if time is allowed,
+In this course, we will consider these topics in order following a micro-macro progression.
 
-- Neuromorpholohy: we can explain the morphology of general neuronal elements, i.e., spines, dendrites, etc., via a
-normative pathway. 
+- Neuromorphology: we can explain the morphology of some general neuronal elements, e.g., spines, dendrites, via a normative pathway. 
 In this part you will find the direct connection between computational neuroscience and physics. 
 
-- Single Neuron Behavior: We will introduce Hodgekin-Hulxuly model which is published in series of papers in 1952, and provide a biologically plausible model.
-This part has relative independence in this course. Some comments claim that it gives little help to an understanding
-of population activity. But the variants in dynamics is significant sometimes, and may offer new insights, i.e., BTSP.
+- Single Neuron Behavior: We will introduce the Hodgkin–Huxley model which was published in a series of papers in 1952, and provide a biologically plausible model.
+This part has relative independence in this course. But the variation in dynamics sometimes offers us new insights, e.g., BTSP.
 
-- From Single to Multi-Neuron Behavior: Compared with cellular perspective and self-consistent network perspective, 
-this part provides a interface, focusing on encoding and decoding information in neural system. 
-We will meet plenty of statistics and information theory in this part, but it gives us something testable. Anyway,
-math for neuroscience sake. 
+- From Single to Multi-Neuron Behavior: Compared with the cellular perspective and the self-consistent network perspective, 
+this part provides an interface, focusing on encoding and decoding information in the neural system. 
+We will find plenty of statistics and information theory in this part.
 
-- Multi Neuron Behavior: In this part, we will introduce so-called neural network, and it is also the most relative
-part compared with field of artificial intelliegnce of 2010s. However, large language model has decisively changed
-our life and the domain of AI. Computational neuroscience is the castle of connectivilism, but the latter will never
-stay in its castle. 
+- Multi Neuron Behavior: In this part, we will introduce neural network models, and it is also the most relevant part to the field of artificial intelligence in the 2010s.
 
-For deeper and more frontier topics in computational neuroscience, there is a course for graduate student in the 
-spring. If you are interested in other topics, welcome to the lab and journal club 4pm every Friday afternoon. 
+For deeper and more advanced topics in computational neuroscience, there is a course for graduate students in the 
+spring. If you are interested in other topics, welcome to the lab and journal club at 4 pm every Friday afternoon. 
 
 
 ## Prerequisites
 
-Mathematical tools are required in each part, while physics is mostly in part one and two. Here is the list. 
+Mathematical tools are required in each part, while physics is mostly in parts one and two. Here is the list. 
 
 - Part 1: some physics mindset
 - Part 2: ODE
 - Part 3: statistics, probability theory, linear algebra, information theory
 - Part 4: statistical physics, machine learning
 
-*Tip: Please do not try to master all of them. Collaboration is profound in this course.* 
+*Tip: Please do not try to master all of them. Collaboration is essential in this course.* 
 
 
 ## Grading
@@ -71,12 +67,14 @@ Mathematical tools are required in each part, while physics is mostly in part on
 | Final (Take Home Exam) | 30% |
 | Bonus | Depend |
 
-If a solution with novelty or about a question tagged bonus, you can get a bonus.
-Posting good question or offering good answer on the issue page will also receive a bonus. 
+If a solution has novelty or answers a question tagged as bonus, you can get a bonus.
+Posting a good question or offering a good answer on the issue page will also earn you
+a bonus.
 
 **Score** = 70% × (average homework) + 30% × (final exam) + bonus
 
-*Tip: Although we have not met such scene, please do not abuse GitHub issue page for bonus. Explanation preserved by TA.*
+*Tip: Although we have not yet encountered such a situation, please do not abuse the
+GitHub issue page for bonus. The TA reserves the right of final interpretation. *
 
 
 ## Recommended Textbooks
@@ -86,14 +84,13 @@ Posting good question or offering good answer on the issue page will also receiv
 - Sterling &amp; Laughlin, *Principles of Neural Design* — [MIT Press](https://mitpress.mit.edu/9780262534680/principles-of-neural-design/)
 - Grace Lindsay, *Models of the Mind: How Physics, Engineering and Mathematics Have Shaped Our Understanding of the Brain* — [Amazon](https://www.amazon.com/Models-Mind-Engineering-Mathematics-Understanding/dp/1472966430)
 
-*Tip: You don't have to read them all.
-Reducing redundant information is another important capability in this course.*
+*Tip: You don't have to read them all. Learning to reduce redundant information
+is also an important skill in this course.*
 
 
 ## Resources of Previous Semesters
 
-The [course repository](https://github.com/Wenlab/Computation-Neuro-Course) provides course resources of different semesters by distinct branches. If you are interested in 
-how senior students learned this course in good old days, or in want of a preview of topics we will conider, you can check these documents. 
+The [course repository](https://github.com/Wenlab/Computation-Neuro-Course) provides course resources of different semesters in distinct branches. If you are interested in how senior students learned this course in the good old days, or want a preview of topics we will consider, you can browse these branches. 
 
 
 ## Policies
@@ -105,6 +102,6 @@ overwhelmed or [*discouraged*](https://e.vnexpress.net/news/news/education/china
 
 > ...if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their results, that is correct and properly attributed, then the result should not be published.
 
-— Terence Tao, the commentary of the [Leiden Declaration](https://leidendeclaration.ai/) on Artificial Intelligence and Mathematics, in "[Mathematics in the Age of AI](https://arxiv.org/abs/2608.16753)", ICM 2026
+— Terence Tao, the commentary of the [Leiden Declaration](https://leidendeclaration.ai/) on Artificial Intelligence and Mathematics, in "[Mathematics in the Age of AI](https://arxiv.org/abs/2608.16753)" (ICM 2026 invited lecture; preprint)
 
 <div class="pagefoot">page maintained by <a href="https://github.com/Zenobiaql">Qilin Zhang</a> <!-- TODO: 维护人 --></div>
