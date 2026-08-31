@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "BIO4502e.01 · Computational Neuroscience · Fall 2026"
+  },
+  {
+    "objectID": "syllabus.html#course-description",
+    "href": "syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nThe emergence of intelligence and behavior from the complex interactions within the brain remains one of the most significant and unsolved mysteries in modern science. This is an exciting era. In the last decade, we have witnessed rapid advancements in experimental tools that now enable us to monitor and manipulate brain circuits with unprecedented precision. However, it is also a perplexing time. Neuroscientists are navigating the intricate landscapes of brain structures and dynamics. Mathematical theory has become crucial for integrating seemingly unrelated evidence, providing new insights, guiding new experiments, and identifying concepts and principles of brain function.\nIn this course, we will explore how physics, engineering, and mathematics have shaped our understanding of the brain. In particular, we will investigate the relationship between structure, dynamics, representation, and behavior. Special topics may include wiring optimization in neural circuit, attractor and chaotic dynamics in neural network, sensory and motor representation, biological learning rules, Hopfield network, and hierarchical control of behaviors. We will also discuss connections with modern machine learning methods."
+  },
+  {
+    "objectID": "syllabus.html#topics",
+    "href": "syllabus.html#topics",
+    "title": "Syllabus",
+    "section": "Topics",
+    "text": "Topics\nComputational neuroscience originated from the attempt to apply mathematics and physics in neuroscience. Researchers believe that such conjucture will offer us more insights into how brain works. These mathematical and physical tools are similar to what we meet in some branches of artificial intelligence, which to some degrees shows their affinity.\nIt is necessary to clarify that we do not plan to offer a comprehensive map of how brain works or how intelligence emerges. It goes beyond our time and capability. Besides, we will not dip into the fundamental mechanics which preserves basic physiological activities. They are reserved to other courses, i.e., biophysics. We will narrow down to a collection of works from 1900s to 2020s, and to its main part, from 1952 to 1997. Compared with some rigorious physics courses, it is more like a gallery. Party haven’t been over in neuroscience.\nIn this course, we will consider these topics in order, if time is allowed,\n\nNeuromorpholohy: we can explain the morphology of general neuronal elements, i.e., spines, dendrites, etc., via a normative pathway. In this part you will find the direct connection between computational neuroscience and physics.\nSingle Neuron Behavior: We will introduce Hodgekin-Hulxuly model which is published in series of papers in 1952, and provide a biologically plausible model. This part has relative independence in this course. Some comments claim that it gives little help to an understanding of population activity. But the variants in dynamics is significant sometimes, and may offer new insights, i.e., BTSP.\nFrom Single to Multi-Neuron Behavior: Compared with cellular perspective and self-consistent network perspective, this part provides a interface, focusing on encoding and decoding information in neural system. We will meet plenty of statistics and information theory in this part, but it gives us something testable. Anyway, math for neuroscience sake."
+  },
+  {
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Syllabus",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nHigh school knowledge of neuroscience. A good working knowledge of multivariable calculus, probability theory, linear algebra and differential equations. Familiarity of a programming language."
+  },
+  {
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nComponent\nWeight\n\n\n\n\nHomework\n70%\n\n\nFinal (Take Home Exam)\n30%\n\n\nBonus\nDepend\n\n\n\nScore = 70% × (average homework) + 30% × (final exam) + bonus"
+  },
+  {
+    "objectID": "syllabus.html#recommended-textbooks",
+    "href": "syllabus.html#recommended-textbooks",
+    "title": "Syllabus",
+    "section": "Recommended Textbooks",
+    "text": "Recommended Textbooks\n\nAbbott & Dayan, Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems — MIT Press\nXiao-Jing Wang, Theoretical Neuroscience: Understanding Cognition — Taylor & Francis\nSterling & Laughlin, Principles of Neural Design — MIT Press\nGrace Lindsay, Models of the Mind: How Physics, Engineering and Mathematics Have Shaped Our Understanding of the Brain — Amazon\n\nTip: You don’t have to read them all!"
+  },
+  {
+    "objectID": "syllabus.html#resources-of-previous-semesters",
+    "href": "syllabus.html#resources-of-previous-semesters",
+    "title": "Syllabus",
+    "section": "Resources of Previous Semesters",
+    "text": "Resources of Previous Semesters\nThe course repository provides course resources of different semesters by distinct branches. If you are interested in how senior students learned this course in good old days, or in want of a preview of topics we will conider, you can check these documents."
+  },
+  {
+    "objectID": "syllabus.html#policies",
+    "href": "syllabus.html#policies",
+    "title": "Syllabus",
+    "section": "Policies",
+    "text": "Policies\n\nLate homework: Homework submitted after the deadline will incur a penalty of 2 points per day, unless you have emailed the TA in advance to arrange an extension.\nCollaboration: Collaboration is allowed, but you must state it in your submission, cite all sources properly, and clearly declare any use of AI tools. In this era, we will unavoidably collaborate with AI tools, and sometimes feel overwhelmed or discouraged. Thus, as a researcher, you should try to preserve your subjectivity.\n\n\n…if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their results, that is correct and properly attributed, then the result should not be published.\n\n— Terence Tao, the commentary of the Leiden Declaration on Artificial Intelligence and Mathematics, in “Mathematics in the Age of AI”, ICM 2026\n\npage maintained by Qilin Zhang"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computational Neuroscience",
+    "section": "",
+    "text": "Computational Neuroscience\n\n\nBIO4502e.01, University of Science and Technology of China (Fall 2026) \n\n\ntime: 2(3,4), Week 1-18 \n\n\nlocation: Room 2307 \n\n\ninstructor: Prof. Quan Wen \n\nTA: Qilin Zhang(office hours: Sat 7-8pm & by appt, LSB 205, West Campus)\n\n\n\n\n\n\n\nprerequisites: High school knowledge of neuroscience. A good working knowledge of multivariable calculus, probability theory, linear algebra and differential equations. Familiarity of a programming language.\nbrief description: In this course, we will explore how physics, engineering, and mathematics have shaped our understanding of the brain. In particular, we will investigate the relationship between structure, dynamics, representation, and behavior. Special topics may include wiring optimization in neural circuit, attractor and chaotic dynamics in neural network, sensory and motor representation, biological learning rules, Hopfield network, and hierarchical control of behaviors. We will also discuss connections with modern machine learning methods.\n\ncontact:\n\n\n\nTA: zhangqilin8879@mail.ustc.edu.cn\n\n\nQQ group: 1092785505\n\n\ndiscussion: Students are encouraged to post discussion on the GitHub issue page.\n\n\nAug 29, 2026 Welcome! Course homepage is live.\n\n\n\nLecture Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nReadings\n\n\nSlides\n\n\nNotes\n\n\nHomework\n\n\n\n\n\n\nW1\n\n\nTue9/1\n\n\nCourse Intro\n\n\nIntroduction\n\n\nLec.01\n\n\nNotes.01\n\n\n\n\n\n\nW2\n\n\nTue9/8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW3\n\n\nTue9/15\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW4\n\n\nTue9/22\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW5\n\n\nTue9/29\n\n\n\n\n\n\n\n\n\n\nHW1 Due 10.11\n\n\n\n\nW6\n\n\nTue10/6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSat10/10\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW7\n\n\nTue10/13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW8\n\n\nTue10/20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW9\n\n\nTue10/27\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW10\n\n\nTue11/3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW11\n\n\nTue11/10\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW12\n\n\nTue11/17\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW13\n\n\nTue11/24\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW14\n\n\nTue12/1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW15\n\n\nTue12/8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW16\n\n\nTue12/15\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW17\n\n\nTue12/22\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW18\n\n\nTue12/29\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npage maintained by Qilin Zhang"
+  }
+]
