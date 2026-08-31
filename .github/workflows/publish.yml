@@ -24,10 +24,10 @@ jobs:
       - name: Show environment
         run: |
           quarto --version
-          git config user.name
-          git config user.email
+          git config user.name || true
+          git config user.email || true
           echo "GITHUB_TOKEN write test:"
-          git ls-remote origin | head -3
+          git ls-remote origin | head -3 || echo "ls-remote FAILED"
 
       - name: Render Quarto project
         run: quarto render .
