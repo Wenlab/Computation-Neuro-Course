@@ -21,23 +21,13 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Show environment
+      - name: Configure git identity
         run: |
-          quarto --version
-          git config user.name || true
-          git config user.email || true
-          echo "GITHUB_TOKEN write test:"
-          git ls-remote origin | head -3 || echo "ls-remote FAILED"
-
-      - name: Render Quarto project
-        run: quarto render .
-
-      - name: Show render output
-        run: ls -la _site/ && ls -la _site/images/
+          git config --global user.name "Quarto GHA Workflow Runner"
+          git config --global user.email "quarto-github-actions-publish@example.com"
 
       - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          quarto publish gh-pages --no-prompt --no-browser
