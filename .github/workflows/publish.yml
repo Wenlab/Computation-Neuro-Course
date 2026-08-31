@@ -21,7 +21,21 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and publish to GitHub Pages
+      - name: Show environment
+        run: |
+          quarto --version
+          git config user.name
+          git config user.email
+          echo "GITHUB_TOKEN write test:"
+          git ls-remote origin | head -3
+
+      - name: Render Quarto project
+        run: quarto render .
+
+      - name: Show render output
+        run: ls -la _site/ && ls -la _site/images/
+
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
