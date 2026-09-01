@@ -50,7 +50,7 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 <tr><th style="text-align: center;">Week</th><th style="text-align: center;">Date</th><th>Topic</th><th>Readings</th><th>Slides</th><th>Notes</th><th>Homework</th></tr>
 </thead>
 <tbody>
-<tr class="week-odd"><td rowspan="1" style="text-align: center;">W1</td><td style="text-align: center;">Tue<br>9/1</td><td></td><td></a></td><td> </td><td></td><td></td></tr>
+<tr class="week-odd"><td rowspan="1" style="text-align: center;">W1</td><td style="text-align: center;">Tue<br>9/1</td><td>An introduction to computational neuroscience</td><td><a href="readings/wang_gu_model.pdf">Wang-Gu Model</a></td><td> <a href="slides/intro_to_comp_neuro.pdf">Introduction</a> </td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W2</td><td style="text-align: center;">Tue<br>9/8</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W3</td><td style="text-align: center;">Tue<br>9/15</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W4</td><td style="text-align: center;">Tue<br>9/22</td><td></td><td></td><td></td><td></td><td></td></tr>
