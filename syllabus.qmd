@@ -17,46 +17,34 @@ The emergence of intelligence and behavior from the complex interactions within 
 In this course, we will explore how physics, engineering, and mathematics have shaped our understanding of the brain. In particular, we will investigate the relationship between structure, dynamics, representation, and behavior. Special topics may include wiring optimization in neural circuit, attractor and chaotic dynamics in neural network, sensory and motor representation, biological learning rules, Hopfield network, and hierarchical control of behaviors. We will also discuss connections with modern machine learning methods. 
 
 
-## Topics
+## What You Will Learn
 
-Computational neuroscience originated from the attempt to apply mathematics and physics to neuroscience. Researchers
-believe that such an approach will offer us more insight into how the brain works. These mathematical and physical tools
-are similar to those encountered in some branches of artificial intelligence — a kinship that, to some degree, reflects their shared foundations.
+- **Connect neurons to perform computation:**
+How a network of simple, noisy, nonlinear units performs operations — amplification, integration, selection, gating — that no single neuron can perform alone. How wiring optimization principles can be used to explain various structures in the brain circuits. We also introduce the basic circuit motifs (feedforward, recurrent, lateral inhibition, gain modulation) and the rate-model formalism used throughout the rest of the course.
 
-It is necessary to clarify that we do not plan to offer a comprehensive map of how the brain works or how intelligence
-emerges. Nor will we dig into the fundamental mechanisms that sustain basic
-physiological activities. We will instead narrow our scope to
-a collection of works from the 1900s to the 2020s, and in particular from 1952 to 1997. Meanwhile, because of the topics we want to introduce are cross-scale, the relations of each part is not so compact. Compared with some
-physics courses, it is more like a gallery.
+- **Recurrent network and attractor dynamics:**
+Connectivity structure creates fixed points, line attractors, and ring attractors that hold information without input. This gives physics students a familiar entry point — energy landscapes, stability analysis, symmetry — and shows how memory and integration arise from wiring rather than from single-cell properties.
 
-In this course, we will consider these topics in order following a micro-macro progression.
+- **E/I balance and chaotic dynamics:**
+Random connectivity with balanced excitation and inhibition produces irregular, high-dimensional activity with a sharp transition to chaos. This is in contrast with attractor dynamics that are low dimensional. Random matrix theory and mean-field methods here are the same tools used in disordered systems, and they explain why cortical spiking looks stochastic despite deterministic dynamics.
 
-- Neuromorphology: we can explain the morphology of some general neuronal elements, e.g., spines, dendrites, via a normative pathway. 
-In this part you will find the direct connection between computational neuroscience and physics. 
+- **Geometry and dimensionality of population neural activity:**
+Population activity occupies low-dimensional manifolds embedded in the space of all neurons, and the shape of that manifold constrains what downstream areas can read out. This shifts the unit of analysis from the single neuron to the collective state.
 
-- Single Neuron Behavior: We will introduce the Hodgkin–Huxley model which was published in a series of papers in 1952, and provide a biologically plausible model.
-This part has relative independence in this course. But the variation in dynamics sometimes offers us new insights, e.g., BTSP.
+- **Efficient coding principle:**
+Given limited spikes, noise, and metabolic cost, the optimal code adapts to input statistics — predicting receptive fields, adaptation, and contrast response from the statistics of natural signals. This is the first normative argument in the course: structure is derived rather than described.
 
-- From Single to Multi-Neuron Behavior: Compared with the cellular perspective and the self-consistent network perspective, 
-this part provides an interface, focusing on encoding and decoding information in the neural system. 
-We will find plenty of statistics and information theory in this part.
+- **Stimulus discrimination, Fisher information and information-limited correlations:**
+Fisher information quantifies how well a population distinguishes nearby stimuli, and correlated noise aligned with the signal direction sets a hard ceiling that adding neurons cannot lift. This makes precise why population geometry, not neuron count, determines coding fidelity.
 
-- Multi Neuron Behavior: In this part, we will introduce neural network models, and it is also the most relevant part to the field of artificial intelligence in the 2010s.
+- **Normative approach to neural computation and the emergence of neural representation:**
+Instead of postulating representations, one specifies an objective and a constraint and asks what representation emerges — in trained recurrent networks, in Bayesian inference schemes, in optimization-derived circuits. Learning appears here as the mechanism that turns a task into a representation.
 
-For deeper and more advanced topics in computational neuroscience, there is a course for graduate students in the 
-spring. If you are interested in other topics, welcome to the lab and journal club at 4 pm every Friday afternoon. 
+- **Reward and reinforcement learning:**
+Temporal-difference learning, value functions, and policy optimization, together with the dopamine prediction-error evidence that made this the clearest link between a normative algorithm and a measured neural signal. This introduces learning driven by scalar feedback.
 
-
-## Prerequisites
-
-Mathematical tools are required in each part, while physics is mostly in parts one and two. Here is the list. 
-
-- Part 1: some physics mindset
-- Part 2: ODE
-- Part 3: statistics, probability theory, linear algebra, information theory
-- Part 4: statistical physics, machine learning
-
-*Tip: Please do not try to master all of them. Collaboration is essential in this course.* 
+- **How does an animal move — an integrated approach:**
+Closing the loop: sensory input, internal state, motor output, and the body's mechanics form one dynamical system, illustrated with whole-brain imaging in C. elegans and larval zebrafish. Every earlier concept reappears here as a component of behavior in a real animal.
 
 
 ## Grading
