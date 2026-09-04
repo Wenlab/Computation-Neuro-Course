@@ -195,6 +195,39 @@ blockquote {
   margin-right: 0.6rem;
 }
 
+.announcements-fold {
+  margin: 1.2rem 0;
+}
+
+.announcements-fold > summary {
+  display: inline-block;
+  cursor: pointer;
+  color: #0072c1;
+  font-weight: 600;
+  list-style: none;
+  user-select: none;
+}
+
+.announcements-fold > summary::-webkit-details-marker {
+  display: none;
+}
+
+.announcements-fold > summary:hover {
+  text-decoration: underline;
+}
+
+.announcements-fold > summary::before {
+  content: "▸ ";
+}
+
+.announcements-fold[open] > summary::before {
+  content: "▾ ";
+}
+
+.announcements-fold .announcements {
+  margin: 0.8rem 0 0;
+}
+
 #quarto-content {
   max-width: 1140px;
   margin: 0 auto;

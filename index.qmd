@@ -29,8 +29,14 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 
 **discussion:** Students are encouraged to post discussion on the GitHub [issue page](https://github.com/Wenlab/Computation-Neuro-Course/issues).
 
-<ul class="announcements" id="announcements">
+<details class="announcements-fold">
+<summary>View older announcements</summary>
+<ul class="announcements">
 <li><span class="date">Aug 29, 2026</span> Welcome! Course homepage is live.</li>
+</ul>
+</details>
+<ul class="announcements" id="announcements">
+<li><span class="date">Sep 4, 2026</span> Syllabus updated.</li>
 </ul>
 
 <div class="schedule-title" id="schedule">Lecture Schedule</div>
