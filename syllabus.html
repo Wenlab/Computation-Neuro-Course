@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-76c9f475e333974b604cb075392927c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5836920af5656ae7fe9546b13d89a00f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -123,8 +123,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
-  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link" data-scroll-target="#what-you-will-learn">What You Will Learn</a></li>
   <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
   <li><a href="#recommended-textbooks" id="toc-recommended-textbooks" class="nav-link" data-scroll-target="#recommended-textbooks">Recommended Textbooks</a></li>
   <li><a href="#resources-of-previous-semesters" id="toc-resources-of-previous-semesters" class="nav-link" data-scroll-target="#resources-of-previous-semesters">Resources of Previous Semesters</a></li>
@@ -168,29 +167,19 @@ BIO4502e.01 · Computational Neuroscience · Fall 2026
 <p>The emergence of intelligence and behavior from the complex interactions within the brain remains one of the most significant and unsolved mysteries in modern science. This is an exciting era. In the last decade, we have witnessed rapid advancements in experimental tools that now enable us to monitor and manipulate brain circuits with unprecedented precision. However, it is also a perplexing time. Neuroscientists are navigating the intricate landscapes of brain structures and dynamics. Mathematical theory has become crucial for integrating seemingly unrelated evidence, providing new insights, guiding new experiments, and identifying concepts and principles of brain function.</p>
 <p>In this course, we will explore how physics, engineering, and mathematics have shaped our understanding of the brain. In particular, we will investigate the relationship between structure, dynamics, representation, and behavior. Special topics may include wiring optimization in neural circuit, attractor and chaotic dynamics in neural network, sensory and motor representation, biological learning rules, Hopfield network, and hierarchical control of behaviors. We will also discuss connections with modern machine learning methods.</p>
 </section>
-<section id="topics" class="level2">
-<h2 class="anchored" data-anchor-id="topics">Topics</h2>
-<p>Computational neuroscience originated from the attempt to apply mathematics and physics to neuroscience. Researchers believe that such an approach will offer us more insight into how the brain works. These mathematical and physical tools are similar to those encountered in some branches of artificial intelligence — a kinship that, to some degree, reflects their shared foundations.</p>
-<p>It is necessary to clarify that we do not plan to offer a comprehensive map of how the brain works or how intelligence emerges. Nor will we dig into the fundamental mechanisms that sustain basic physiological activities. We will instead narrow our scope to a collection of works from the 1900s to the 2020s, and in particular from 1952 to 1997. Meanwhile, because of the topics we want to introduce are cross-scale, the relations of each part is not so compact. Compared with some physics courses, it is more like a gallery.</p>
-<p>In this course, we will consider these topics in order following a micro-macro progression.</p>
+<section id="what-you-will-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-learn">What You Will Learn</h2>
 <ul>
-<li><p>Neuromorphology: we can explain the morphology of some general neuronal elements, e.g., spines, dendrites, via a normative pathway. In this part you will find the direct connection between computational neuroscience and physics.</p></li>
-<li><p>Single Neuron Behavior: We will introduce the Hodgkin–Huxley model which was published in a series of papers in 1952, and provide a biologically plausible model. This part has relative independence in this course. But the variation in dynamics sometimes offers us new insights, e.g., BTSP.</p></li>
-<li><p>From Single to Multi-Neuron Behavior: Compared with the cellular perspective and the self-consistent network perspective, this part provides an interface, focusing on encoding and decoding information in the neural system. We will find plenty of statistics and information theory in this part.</p></li>
-<li><p>Multi Neuron Behavior: In this part, we will introduce neural network models, and it is also the most relevant part to the field of artificial intelligence in the 2010s.</p></li>
+<li><p><strong>Connect neurons to perform computation:</strong> How a network of simple, noisy, nonlinear units performs operations — amplification, integration, selection, gating — that no single neuron can perform alone. How wiring optimization principles can be used to explain various structures in the brain circuits. We also introduce the basic circuit motifs (feedforward, recurrent, lateral inhibition, gain modulation) and the rate-model formalism used throughout the rest of the course.</p></li>
+<li><p><strong>Recurrent network and attractor dynamics:</strong> Connectivity structure creates fixed points, line attractors, and ring attractors that hold information without input. This gives physics students a familiar entry point — energy landscapes, stability analysis, symmetry — and shows how memory and integration arise from wiring rather than from single-cell properties.</p></li>
+<li><p><strong>E/I balance and chaotic dynamics:</strong> Random connectivity with balanced excitation and inhibition produces irregular, high-dimensional activity with a sharp transition to chaos. This is in contrast with attractor dynamics that are low dimensional. Random matrix theory and mean-field methods here are the same tools used in disordered systems, and they explain why cortical spiking looks stochastic despite deterministic dynamics.</p></li>
+<li><p><strong>Geometry and dimensionality of population neural activity:</strong> Population activity occupies low-dimensional manifolds embedded in the space of all neurons, and the shape of that manifold constrains what downstream areas can read out. This shifts the unit of analysis from the single neuron to the collective state.</p></li>
+<li><p><strong>Efficient coding principle:</strong> Given limited spikes, noise, and metabolic cost, the optimal code adapts to input statistics — predicting receptive fields, adaptation, and contrast response from the statistics of natural signals. This is the first normative argument in the course: structure is derived rather than described.</p></li>
+<li><p><strong>Stimulus discrimination, Fisher information and information-limited correlations:</strong> Fisher information quantifies how well a population distinguishes nearby stimuli, and correlated noise aligned with the signal direction sets a hard ceiling that adding neurons cannot lift. This makes precise why population geometry, not neuron count, determines coding fidelity.</p></li>
+<li><p><strong>Normative approach to neural computation and the emergence of neural representation:</strong> Instead of postulating representations, one specifies an objective and a constraint and asks what representation emerges — in trained recurrent networks, in Bayesian inference schemes, in optimization-derived circuits. Learning appears here as the mechanism that turns a task into a representation.</p></li>
+<li><p><strong>Reward and reinforcement learning:</strong> Temporal-difference learning, value functions, and policy optimization, together with the dopamine prediction-error evidence that made this the clearest link between a normative algorithm and a measured neural signal. This introduces learning driven by scalar feedback.</p></li>
+<li><p><strong>How does an animal move — an integrated approach:</strong> Closing the loop: sensory input, internal state, motor output, and the body’s mechanics form one dynamical system, illustrated with whole-brain imaging in C. elegans and larval zebrafish. Every earlier concept reappears here as a component of behavior in a real animal.</p></li>
 </ul>
-<p>For deeper and more advanced topics in computational neuroscience, there is a course for graduate students in the spring. If you are interested in other topics, welcome to the lab and journal club at 4 pm every Friday afternoon.</p>
-</section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<p>Mathematical tools are required in each part, while physics is mostly in parts one and two. Here is the list.</p>
-<ul>
-<li>Part 1: some physics mindset</li>
-<li>Part 2: ODE</li>
-<li>Part 3: statistics, probability theory, linear algebra, information theory</li>
-<li>Part 4: statistical physics, machine learning</li>
-</ul>
-<p><em>Tip: Please do not try to master all of them. Collaboration is essential in this course.</em></p>
 </section>
 <section id="grading" class="level2">
 <h2 class="anchored" data-anchor-id="grading">Grading</h2>
