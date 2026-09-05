@@ -10,8 +10,6 @@ website:
   navbar:
     background: "#0072c1"
     foreground: "#ffffff"
-    title: "WenLab"                  
-    logo: images/wenlab_logo.png     
     search: false
     left:
       - text: Home

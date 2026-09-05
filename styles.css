@@ -296,6 +296,30 @@ blockquote {
   transition: opacity 0.2s ease;
 }
 
+.navbar .navbar-brand-svg {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+/* Hide the Quarto-generated brand text (replaced by inline SVG lockup via wenlab-brand.html) */
+#quarto-header .navbar-brand .navbar-title {
+  display: none !important;
+}
+
+.navbar .navbar-brand-svg svg {
+  height: 2rem;
+  width: auto;
+  display: block;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+}
+
+.navbar .navbar-brand-svg:hover svg,
+.navbar .navbar-brand-svg:focus svg {
+  opacity: 0.65;
+}
+
 .navbar .navbar-brand:hover .navbar-logo,
 .navbar .navbar-brand:focus .navbar-logo {
   opacity: 0.65;
