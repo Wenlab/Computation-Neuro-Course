@@ -50,7 +50,7 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 <col style="width: 15%;">
 <col style="width: 10%;">
 <col style="width: 10%;">
-<col style="width: 20%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr><th style="text-align: center;">Week</th><th style="text-align: center;">Date</th><th>Topic</th><th>Readings</th><th>Slides</th><th>Notes</th><th>Homework</th></tr>
