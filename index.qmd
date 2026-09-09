@@ -57,7 +57,7 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 </thead>
 <tbody>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W1</td><td style="text-align: center;">Tue<br>9/1</td><td>An introduction to computational neuroscience</td><td><a href="readings/wang_gu_model.pdf">Wang-Gu Model</a></td><td> <a href="slides/intro_to_comp_neuro.pdf">Introduction</a> </td><td></td><td></td></tr>
-<tr class="week-even"><td rowspan="1" style="text-align: center;">W2</td><td style="text-align: center;">Tue<br>9/8</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr class="week-even"><td rowspan="1" style="text-align: center;">W2</td><td style="text-align: center;">Tue<br>9/8</td><td>Single neuron dynamics and computation</td><td></td><td><a href="slides/Connecting-Neurons-to-Perfrom-Computation.pdf">Single Neuron Dynamics</a></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W3</td><td style="text-align: center;">Tue<br>9/15</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W4</td><td style="text-align: center;">Tue<br>9/22</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W5</td><td style="text-align: center;">Tue<br>9/29</td><td></td><td></td><td></td><td></td><td></td></tr>
