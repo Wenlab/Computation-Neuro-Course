@@ -1,7 +1,10 @@
 project:
   type: website
   resources:
-    - images/     
+    - images/
+    - readings/
+    - slides/
+    - notes/
 
 website:
   title: "Computational Neuroscience"
