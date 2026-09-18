@@ -5,6 +5,7 @@ project:
     - readings/
     - slides/
     - notes/
+    - homework/
 
 website:
   title: "Computational Neuroscience"
