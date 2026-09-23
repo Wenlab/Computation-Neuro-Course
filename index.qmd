@@ -32,11 +32,12 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 <details class="announcements-fold">
 <summary>View older announcements</summary>
 <ul class="announcements">
+<li><span class="date">Sep 4, 2026</span> Syllabus updated.</li>
 <li><span class="date">Aug 29, 2026</span> Welcome! Course homepage is live.</li>
 </ul>
 </details>
 <ul class="announcements" id="announcements">
-<li><span class="date">Sep 4, 2026</span> Syllabus updated.</li>
+<li><span class="date">Sep 23, 2026</span> Recitation: time 2pm room 2307.</li>
 </ul>
 
 <div class="schedule-title" id="schedule">Lecture Schedule</div>
@@ -59,7 +60,8 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W1</td><td style="text-align: center;">Tue<br>9/1</td><td>An introduction to computational neuroscience</td><td><a href="readings/wang_gu_model.pdf">Wang-Gu Model</a></td><td> <a href="slides/intro_to_comp_neuro.pdf">Introduction</a> </td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W2</td><td style="text-align: center;">Tue<br>9/8</td><td>Single neuron dynamics and computation</td><td></td><td><a href="slides/Connecting-Neurons-to-Perfrom-Computation.pdf">Single Neuron Dynamics</a></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W3</td><td style="text-align: center;">Tue<br>9/15</td><td>Connecting neurons for computation</td><td></td><td></td><td><a href="notes/lecture-note1-Sep14.pdf">Lec3.1</a></td><td><a href="homework/Problem-Set1.pdf">Problem Set 1</a> <span class="due">due 9.29</span></td></tr>
-<tr class="week-even"><td rowspan="1" style="text-align: center;">W4</td><td style="text-align: center;">Tue<br>9/22</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr class="week-even"><td rowspan="1" style="text-align: center;">W4</td><td style="text-align: center;">Tue<br>9/22</td><td>Perceptron model: capacity and algorithm</td><td></td><td></td><td><a href="notes/lecture-note2-Sep22.pdf">Lec3.2</a></td><td></td></tr>
+<tr class="recitation-row"><td></td><td style="text-align: center;">Sun<br>9/27</td><td>Recitation: time 7(6,7) room 2307</td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W5</td><td style="text-align: center;">Tue<br>9/29</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="2" style="text-align: center;">W6</td><td style="text-align: center;">Tue<br>10/6</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td style="text-align: center;">Sat<br>10/10</td><td></td><td></td><td></td><td></td><td></td></tr>

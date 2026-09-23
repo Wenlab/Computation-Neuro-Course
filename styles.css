@@ -154,6 +154,17 @@ blockquote {
   background-color: #b0c4de;
 }
 
+/* Recitation / announcement row: warm colour to stand out from the blue weeks */
+.table tbody tr.recitation-row td {
+  background-color: #ffe0cc;
+  color: #c2410c;
+  font-weight: 600;
+}
+
+.table tbody tr.recitation-row:hover td {
+  background-color: #ffd0ad;
+}
+
 .table a {
   display: inline-block;
   padding: 0.22em 0.6em;

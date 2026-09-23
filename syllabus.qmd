@@ -52,7 +52,7 @@ Closing the loop: sensory input, internal state, motor output, and the body's me
 | Component | Weight |
 |:---:|:---:|
 | Homework | 70% |
-| Final (Take Home Exam) | 30% |
+| Final | 30% |
 | Bonus | Depend |
 
 If a solution has novelty or answers a question tagged as bonus, you can get a bonus.
@@ -60,6 +60,8 @@ Posting a good question or offering a good answer on the issue page will also ea
 a bonus.
 
 **Score** = 70% × (average homework) + 30% × (final exam) + bonus
+
+**Submission**: USTC bb platform / offline
 
 *Tip: Although we have not yet encountered such a situation, please do not abuse the
 GitHub issue page for bonus. The TA reserves the right of final interpretation. *
