@@ -165,6 +165,18 @@ blockquote {
   background-color: #ffd0ad;
 }
 
+/* Links inside the recitation row follow the warm palette (like blue links on blue rows) */
+.table tbody tr.recitation-row a {
+  color: #c2410c;
+  border-color: #c2410c;
+}
+
+.table tbody tr.recitation-row a:hover,
+.table tbody tr.recitation-row a:focus {
+  background-color: #c2410c;
+  color: #ffffff;
+}
+
 .table a {
   display: inline-block;
   padding: 0.22em 0.6em;
