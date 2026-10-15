@@ -210,12 +210,16 @@ blockquote {
   background-color: #ffffff;
   border: 1px solid #b0c4de;
   border-radius: 12px;
+  /* date in its own column so wrapped lines align with the text, not the date */
+  display: flex;
+  align-items: baseline;
 }
 
 .announcements .date {
   font-weight: 600;
   color: #0072c1;
   margin-right: 0.6rem;
+  flex: none;
 }
 
 .announcements-fold {
