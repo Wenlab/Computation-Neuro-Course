@@ -29,16 +29,17 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 
 **discussion:** Students are encouraged to post discussion on the GitHub [issue page](https://github.com/Wenlab/Computation-Neuro-Course/issues).
 
+<ul class="announcements" id="announcements">
+<li><span class="date">Oct 15, 2026</span> Recitation: Sat 10/17, time 6(6,7), room 2307.</li>
+</ul>
 <details class="announcements-fold">
 <summary>View older announcements</summary>
 <ul class="announcements">
+<li><span class="date">Sep 23, 2026</span> Recitation: time 2pm room 2307.</li>
 <li><span class="date">Sep 4, 2026</span> Syllabus updated.</li>
 <li><span class="date">Aug 29, 2026</span> Welcome! Course homepage is live.</li>
 </ul>
 </details>
-<ul class="announcements" id="announcements">
-<li><span class="date">Sep 23, 2026</span> Recitation: time 2pm room 2307.</li>
-</ul>
 
 <div class="schedule-title" id="schedule">Lecture Schedule</div>
 
@@ -65,7 +66,8 @@ probability theory, linear algebra and differential equations. Familiarity of a 
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W5</td><td style="text-align: center;">Tue<br>9/29</td><td>Recurrent neural network I: from weights to dynamics</td><td></td><td></td><td><a href="notes/Lecture-note-RNN1.pdf">Lec 4.1</a></td><td></td></tr>
 <tr class="week-even"><td rowspan="2" style="text-align: center;">W6</td><td style="text-align: center;">Tue<br>10/6</td><td><i>No class</i></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td style="text-align: center;">Sat<br>10/10</td><td>Recurrent neural network II: attractor and Hopfield network</td><td></td><td><a href="slides/attractor-dynamics.pdf">Attractors in RNN</a></td><td><a href="notes/Lecture-note-RNN1-updated.pdf">Lec 4.2</a></td><td></td></tr>
-<tr class="week-odd"><td rowspan="1" style="text-align: center;">W7</td><td style="text-align: center;">Tue<br>10/13</td><td></td><td></a></td><td></td><td></td><td></td></tr>
+<tr class="week-odd"><td rowspan="1" style="text-align: center;">W7</td><td style="text-align: center;">Tue<br>10/13</td><td>Recurrent neural network III: KIMI-K3, an introduction to RMT</td><td></td><td></td><td><a href="notes/Lecture-6.pdf">Lec 4.3</a></td><td><a href="homework/Problem-Set2.pdf">Problem Set 2</a> <span class="due">due 10.19</span></td></tr>
+<tr class="recitation-row"><td></td><td style="text-align: center;">Sat<br>10/17</td><td>Recitation: time 6(6,7) room 2307</td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W8</td><td style="text-align: center;">Tue<br>10/20</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-odd"><td rowspan="1" style="text-align: center;">W9</td><td style="text-align: center;">Tue<br>10/27</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr class="week-even"><td rowspan="1" style="text-align: center;">W10</td><td style="text-align: center;">Tue<br>11/3</td><td></td><td></td><td></td><td></td><td></td></tr>
